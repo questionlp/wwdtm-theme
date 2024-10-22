@@ -466,6 +466,10 @@ main {
         }
     }
 
+    .report.table > :not(caption) > * > * {
+        padding: 0.6rem;
+    }
+
     .static-page {
         h2 {
             margin-bottom: 1.6rem;
