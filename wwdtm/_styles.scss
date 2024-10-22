@@ -470,6 +470,13 @@ main {
         padding: 0.6rem;
     }
 
+    .report.table {
+        th {
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
     .static-page {
         h2 {
             margin-bottom: 1.6rem;
