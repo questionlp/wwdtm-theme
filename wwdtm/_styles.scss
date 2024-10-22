@@ -475,6 +475,51 @@ main {
             text-align: center;
             vertical-align: middle;
         }
+
+        col.state {
+            width: 4rem;
+        }
+
+        col.boolean,
+        col.count,
+        col.date.year,
+        col.score,
+        col.stats.int {
+            width: 6rem;
+        }
+
+        col.count.mix,
+        col.date,
+        col.stats.float {
+            width: 8rem;
+        }
+
+        col.rank {
+            width: 9rem;
+        }
+
+        col.city,
+        col.count.long,
+        col.score.long {
+            width: 10rem;
+        }
+
+        col.label,
+        col.name.host,
+        col.name.scorekeeper {
+            width: 12rem;
+        }
+
+        col.date.long,
+        col.name.panelist,
+        col.name.guest {
+            width: 16rem;
+        }
+
+        col.name.guest.long,
+        col.name.venue {
+            width: 20rem;
+        }
     }
 
     .static-page {
