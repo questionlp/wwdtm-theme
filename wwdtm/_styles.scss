@@ -521,9 +521,12 @@ main {
             width: 16rem;
         }
 
-        col.name.guest.long,
-        col.name.venue {
+        col.name.guest.long {
             width: 20rem;
+        }
+
+        col.name.venue {
+            width: 32rem;
         }
 
         col.notes {
