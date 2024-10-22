@@ -542,6 +542,56 @@ main {
         .notes-text ul:last-of-type {
             margin-bottom: 0 !important;
         }
+
+        td.notes p {
+            margin-block-start: 0;
+            margin-block-end: 1em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+        }
+
+        td.score-higher,
+        td.score-lower,
+        td.score-tied {
+            text-align: center;
+        }
+
+        td.score-higher {
+            background-color: rgba(245, 80, 0, 0.85);
+            font-weight: 600;
+        }
+
+        td.score-lower {
+            background-color: inherit;
+        }
+
+        ul.no-bullets {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        span.hover.tooltip {
+            cursor: help;
+        }
+
+        #appearance-by-year,
+        #average-scores-by-year-all {
+            max-height: 80vh;
+            overflow: scroll;
+        }
+
+        #appearance-by-year col.name.panelist,
+        #appearance-by-year td.name.panelist,
+        #average-scores-by-year-all col.name.panelist,
+        #average-scores-by-year-all td.name.panelist {
+            min-width: 7.5rem;
+        }
+
+        #average-scores-by-year-all col.stats.float,
+        #average-scores-by-year-all td.stats.float {
+            min-width: 4.5rem;
+        }
     }
 
     .static-page {
