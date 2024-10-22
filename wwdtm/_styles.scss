@@ -617,6 +617,13 @@ main {
         }
     }
 
+    .card.report-form {
+        input.btn-submit {
+            background-color: ibm.$blue-80;
+            color: $white;
+        }
+    }
+
     .static-page {
         h2 {
             margin-bottom: 1.6rem;
