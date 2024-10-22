@@ -482,7 +482,7 @@ main {
         }
 
         col.state {
-            width: 4rem;
+            width: 6rem;
         }
 
         col.boolean,
@@ -503,7 +503,10 @@ main {
             width: 9rem;
         }
 
-        col.city,
+        col.city {
+            width: 12rem;
+        }
+
         col.count.long,
         col.score.long {
             width: 10rem;
