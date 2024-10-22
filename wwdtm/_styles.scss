@@ -521,6 +521,18 @@ main {
             width: 20rem;
         }
 
+        col.notes {
+            min-width: 28rem;
+        }
+
+        col.introduction {
+            min-width: 36rem;
+        }
+
+        col.long-text {
+            min-width: 48rem;
+        }
+
         .description-text p,
         .notes-text p {
             margin-top: 0;
