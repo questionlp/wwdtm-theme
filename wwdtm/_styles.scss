@@ -213,11 +213,12 @@ main {
 
         .report-list {
             h3.title {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .description {
-                line-height: unset;
+                line-height: initial;
+                margin-bottom: 1rem;
             }
         }
 
