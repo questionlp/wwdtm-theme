@@ -618,10 +618,17 @@ main {
     }
 
     .card.report-form {
+        input, select {
+            font-size: unset;
+        }
+
+        label, input.btn-submit {
+            font-weight: 500;
+        }
+
         input.btn-submit {
             background-color: ibm.$blue-70;
             color: $white;
-            font-weight: 500;
         }
     }
 
