@@ -618,6 +618,10 @@ main {
     }
 
     .card.report-form {
+        .card-header {
+            font-weight: 600;
+        }
+
         input, select {
             font-size: unset;
         }
