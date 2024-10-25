@@ -24,6 +24,12 @@ $gray: ibm.$gray-60 !default;
 $dark-gray: ibm.$gray-80 !default;
 $warm-gray: ibm.$warm-gray-60 !default;
 
+// Alert Colors
+$danger: ibm.$error;
+$warning: ibm.$warning;
+$success: ibm.$success;
+$info: ibm.$info;
+
 // Color Ranges
 $blue-100: ibm.$blue-10 !default;
 $blue-200: ibm.$blue-20 !default;
