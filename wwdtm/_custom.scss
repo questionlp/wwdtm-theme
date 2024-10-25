@@ -57,3 +57,15 @@ $bg-footer-copyright: ibm.$blue-80;
 
 $tooltip-underline: ibm.$green-70;
 $tooltip-underline-dark: ibm.$green-20;
+
+/*
+$error: $alert-60;
+$success: $alert-50;
+$warning: $alert-40;
+$info: $blue-60;
+*/
+
+$danger: ibm.$error;
+$warning: ibm.$warning;
+$success: ibm.$success;
+$info: ibm.$info;

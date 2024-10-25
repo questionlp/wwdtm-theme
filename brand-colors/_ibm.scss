@@ -8,12 +8,6 @@
 $black:         #000000;
 $white:         #ffffff;
 
-// IBM Alert Colors
-$alert-60:    #da1e28;
-$alert-50:    #24a148;
-$alert-40:    #ff832b;
-$alert-30:    #f1c21b;
-
 // IBM Reds
 $red-100:     #2d0709;
 $red-90:      #520408;
@@ -133,3 +127,15 @@ $warm-gray-40:  #ada8a8;
 $warm-gray-30:  #cac5c4;
 $warm-gray-20:  #e5e0df;
 $warm-gray-10:  #f7f3f2;
+
+// IBM Alert Colors
+$alert-60: #da1e28;
+$alert-50: #24a148;
+$alert-40: #ff832b;
+$alert-30: #f1c21b;
+
+// IBM Alert Aliases
+$error: $alert-60;
+$success: $alert-50;
+$warning: $alert-40;
+$info: $blue-60;
