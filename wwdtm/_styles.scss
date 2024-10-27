@@ -746,7 +746,7 @@ footer {
             }
 
             thead.table-light, tfoot.table-light {
-                border: unset;
+                border: inherit;
             }
         }
     }
