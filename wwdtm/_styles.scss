@@ -741,7 +741,12 @@ footer {
             thead, tfoot {
                 th {
                     background-color: ibm.$gray-80;
+                    color: $white;
                 }
+            }
+
+            thead.table-light, tfoot.table-light {
+                border: unset;
             }
         }
     }
