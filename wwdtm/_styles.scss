@@ -595,9 +595,14 @@ main {
         }
 
         td.score-higher {
-            background-color: ibm.$green-30;
+            background-color: ibm.$green-20;
             color: $black;
             font-weight: 600;
+        }
+
+        td.score-tied {
+            background-color: ibm.$blue-20;
+            color: $black;
         }
 
         td.score-lower {
