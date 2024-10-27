@@ -760,7 +760,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1201px) {
     main {
         ul.name-list-pvp {
             column-count: 3;
@@ -882,6 +882,14 @@ footer {
             .name-list {
                 column-count: 1;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    main {
+        ul.name-list-pvp {
+            column-count: 2;
         }
     }
 }
