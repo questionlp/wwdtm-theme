@@ -485,6 +485,10 @@ main {
     }
 
     .report.table {
+        thead, tfoot {
+            background-color: ibm.$gray-10;
+        }
+
         th {
             text-align: center;
             vertical-align: middle;
@@ -590,6 +594,7 @@ main {
 
         td.score-higher {
             background-color: ibm.$green-30;
+            color: $black;
             font-weight: 600;
         }
 
@@ -723,6 +728,12 @@ footer {
 
         .name-list {
             column-rule: 1px dotted rgba($white, 0.6);
+        }
+
+        .report.table {
+            thead, tfoot {
+                background-color: ibm.$gray-80;
+            }
         }
     }
 }
