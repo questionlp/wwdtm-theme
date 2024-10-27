@@ -486,7 +486,9 @@ main {
 
     .report.table {
         thead, tfoot {
-            background-color: ibm.$gray-10;
+            th {
+                background-color: ibm.$gray-10;
+            }
         }
 
         th {
@@ -732,7 +734,9 @@ footer {
 
         .report.table {
             thead, tfoot {
-                background-color: ibm.$gray-80;
+                th {
+                    background-color: ibm.$gray-80;
+                }
             }
         }
     }
