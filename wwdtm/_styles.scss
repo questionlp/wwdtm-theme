@@ -760,6 +760,14 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    main {
+        ul.name-list-pvp {
+            column-count: 3;
+        }
+    }
+}
+
 @media only screen and (max-width: 801px) {
     main {
         padding-top: 3rem;
