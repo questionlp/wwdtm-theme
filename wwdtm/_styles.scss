@@ -4,12 +4,10 @@
 //
 // vim: set noai syntax=python ts=4 sw=4:
 
-/*
 :root {
     // Adapted from: https://matthewjamestaylor.com/responsive-font-size
-    --bs-body-font-size: clamp(15px, calc(15px + 0.390625vw), 18px);
+    --bs-body-font-size: clamp(14px, calc(14px + 0.325vw), 16.5px);
 }
-*/
 
 body {
     .tooltip {
