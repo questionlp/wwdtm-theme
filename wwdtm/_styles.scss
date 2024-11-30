@@ -6,7 +6,8 @@
 
 :root {
     // Adapted from: https://matthewjamestaylor.com/responsive-font-size
-    --bs-body-font-size: clamp(14px, calc(14px + 0.325vw), 16.5px);
+    //--bs-body-font-size: clamp(14px, calc(14px + 0.325vw), 16.5px);
+    --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
 }
 
 body {
@@ -45,6 +46,7 @@ header {
 
         .nav-link {
             padding: var(--bs-nav-link-padding-y) $navbar-nav-link-padding-x * 1.25;
+            font-weight: 500;
         }
 
         .nav-link:hover {
@@ -688,6 +690,10 @@ footer {
 
     .links {
         background-color: $bg-footer-links;
+
+        a {
+            font-weight: 500;
+        }
 
         ul {
             list-style: none;
