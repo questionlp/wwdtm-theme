@@ -350,6 +350,10 @@ main {
                 text-decoration: none;
                 color: ibm.$blue-70;
             }
+
+            a:hover {
+                color: ibm.$black;
+            }
         }
 
         .badge.guest {
