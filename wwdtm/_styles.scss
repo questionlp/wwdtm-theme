@@ -175,7 +175,12 @@ main {
 
     .accordion-button:disabled {
         font-style: italic;
-        font-weight: unset;
+        font-weight: 200;
+    }
+
+    .accordion-button:disabled::after {
+        --bs-accordion-btn-icon: unset;
+        --bs-accordion-btn-active-icon: unset;
     }
 
     .info {
