@@ -174,7 +174,8 @@ main {
     }
 
     .accordion-button:disabled {
-        color: ibm.$cool-gray-80;
+        font-style: italic;
+        font-weight: unset;
     }
 
     .info {
@@ -769,10 +770,6 @@ footer {
         .accordion-button:not(.collapsed) {
             background-color: ibm.$gray-80;
             box-shadow: unset;
-        }
-
-        .accordion-button:disabled {
-            color: ibm.$cool-gray-20;
         }
 
         .name-list {
