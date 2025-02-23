@@ -163,12 +163,12 @@ main {
         margin-bottom: 2.4rem;
     }
 
-    .accordian-button {
+    .accordion-button {
         font-size: 1.2rem;
         font-weight: 500;
     }
 
-    .accordian-button:not(.collapsed) {
+    .accordion-button:not(.collapsed) {
         color: inherit;
         background-color: ibm.$gray-10;
     }
@@ -762,7 +762,7 @@ footer {
             }
         }
 
-        .accordian-button:not(.collapsed) {
+        .accordion-button:not(.collapsed) {
             background-color: ibm.$gray-80;
         }
 
