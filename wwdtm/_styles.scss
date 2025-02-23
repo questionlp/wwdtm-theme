@@ -178,8 +178,9 @@ main {
     }
 
     .accordion-button:disabled::after {
-        --bs-accordion-btn-icon: unset;
-        --bs-accordion-btn-active-icon: unset;
+        background-image: none;
+        background-repeat: unset;
+        background-size: unset;
     }
 
     .info {
