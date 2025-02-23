@@ -764,6 +764,7 @@ footer {
 
         .accordion-button:not(.collapsed) {
             background-color: ibm.$gray-80;
+            box-shadow: unset;
         }
 
         .name-list {
