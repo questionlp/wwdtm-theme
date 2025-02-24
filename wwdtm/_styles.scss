@@ -163,6 +163,12 @@ main {
         margin-bottom: 2.4rem;
     }
 
+    .accordion {
+        h1, h2, h3, h4, h5 {
+            margin: unset;
+        }
+    }
+
     .accordion-button {
         font-size: 1.2rem;
         font-weight: 500;
