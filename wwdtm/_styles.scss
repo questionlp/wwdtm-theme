@@ -10,6 +10,38 @@
     --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
 }
 
+.accordion {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: unset;
+    }
+}
+
+.accordion-button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: ibm.$gray-10;
+}
+
+/*.accordion-button:disabled {
+        font-weight: 200;
+    }*/
+
+.accordion-button:disabled::after {
+    background-image: none;
+    background-repeat: unset;
+    background-size: unset;
+}
+
 body {
     .tooltip {
         font-size: 0.9em;
@@ -161,33 +193,6 @@ main {
         column-rule: none;
         list-style: none;
         margin-bottom: 2.4rem;
-    }
-
-    .accordion {
-        h1, h2, h3, h4, h5 {
-            margin: unset;
-        }
-    }
-
-    .accordion-button {
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: unset;
-    }
-
-    .accordion-button:not(.collapsed) {
-        color: inherit;
-        background-color: ibm.$gray-10;
-    }
-
-    /*.accordion-button:disabled {
-        font-weight: 200;
-    }*/
-
-    .accordion-button:disabled::after {
-        background-image: none;
-        background-repeat: unset;
-        background-size: unset;
     }
 
     .info {
