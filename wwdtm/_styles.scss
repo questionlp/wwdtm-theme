@@ -172,6 +172,7 @@ main {
     .accordion-button {
         font-size: 1.2rem;
         font-weight: 500;
+        color: unset;
     }
 
     .accordion-button:not(.collapsed) {
@@ -179,9 +180,9 @@ main {
         background-color: ibm.$gray-10;
     }
 
-    .accordion-button:disabled {
+    /*.accordion-button:disabled {
         font-weight: 200;
-    }
+    }*/
 
     .accordion-button:disabled::after {
         background-image: none;
