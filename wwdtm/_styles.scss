@@ -24,17 +24,13 @@
 .accordion-button {
     font-size: 1.2rem;
     font-weight: 500;
-    color: unset !important;
+    color: revert;
 }
 
 .accordion-button:not(.collapsed) {
     color: inherit;
     background-color: ibm.$gray-10;
 }
-
-/*.accordion-button:disabled {
-        font-weight: 200;
-    }*/
 
 .accordion-button:disabled::after {
     background-image: none;
