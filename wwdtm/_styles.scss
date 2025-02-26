@@ -10,33 +10,7 @@
     --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
 }
 
-.accordion {
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        margin: unset;
-    }
-}
-
-.accordion-button {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: revert;
-}
-
-.accordion-button:not(.collapsed) {
-    color: inherit;
-    background-color: ibm.$gray-10;
-}
-
-.accordion-button:disabled::after {
-    background-image: none;
-    background-repeat: unset;
-    background-size: unset;
-}
 
 body {
     .tooltip {
@@ -177,6 +151,38 @@ main {
                 color: $black;
             }
         }
+    }
+
+    .accordion {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: unset;
+        }
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: revert;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: inherit;
+        background-color: ibm.$gray-10;
+    }
+
+    .accordion-button:disabled {
+        font-weight: 400;
+    }
+
+    .accordion-button:disabled::after {
+        background-image: none;
+        background-repeat: unset;
+        background-size: unset;
     }
 
     .container-fluid.p-4 {
