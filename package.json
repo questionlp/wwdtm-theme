@@ -1,0 +1,27 @@
+{
+    "name": "wwdtm-theme",
+    "version": "0.1.0",
+    "description": "Bootstrap UI for Wait Wait Stats Projects",
+    "author": {
+        "name": "Linh Pham",
+        "url": "https://linhpham.org/"
+    },
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "@ibm/plex-mono": "^1.1.0",
+        "@ibm/plex-sans": "^1.1.0",
+        "bootstrap": "^5.3.5",
+        "bootstrap-icons": "^1.11.3",
+        "css-minify": "^2.0.0",
+        "sass": "^1.77.8"
+    },
+    "scripts": {
+        "compile-scss": "sass scss/main.scss:dist/css/app.css && sass --style=compressed scss/main.scss:dist/css/app.min.css",
+        "compile-error-scss": "sass scss/errors.scss:dist/css/errors.css && sass --style=compressed scss/errors.scss:dist/css/errors.min.css",
+        "compile-all": "npm run compile-scss && npm run compile-error-scss",
+        "watch": "sass --watch scss/main.scss:dist/css/app.css",
+        "copy-js-bundle": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map dist/js/",
+        "deploy": "npm run compile-all && npm run copy-js-bundle"
+    }
+}
