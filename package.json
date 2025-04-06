@@ -17,8 +17,8 @@
         "sass": "^1.77.8"
     },
     "scripts": {
-        "compile-scss": "sass scss/main.scss:dist/css/app.css && sass --style=compressed scss/main.scss:dist/css/app.min.css",
-        "compile-error-scss": "sass scss/errors.scss:dist/css/errors.css && sass --style=compressed scss/errors.scss:dist/css/errors.min.css",
+        "compile-scss": "sass --no-source-map scss/main.scss:dist/css/app.css && sass --no-source-map --style=compressed scss/main.scss:dist/css/app.min.css",
+        "compile-error-scss": "sass --no-source-map scss/errors.scss:dist/css/errors.css && sass --no-source-map --style=compressed scss/errors.scss:dist/css/errors.min.css",
         "compile-all": "npm run compile-scss && npm run compile-error-scss",
         "watch": "sass --watch scss/main.scss:dist/css/app.css",
         "copy-js-bundle": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map dist/js/",
