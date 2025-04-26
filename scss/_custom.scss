@@ -213,6 +213,12 @@ main {
       li {
         padding: 0.4rem 0.4rem 0.4rem 1.2rem;
       }
+
+      a:not([href]):not([class]),
+      a:not([href]):not([class]):hover {
+        border-bottom: none;
+        opacity: 0.875;
+      }
     }
 
     .report-list {
