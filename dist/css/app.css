@@ -12422,7 +12422,6 @@ main .info .show-list a.disabled-link {
   border-bottom: none;
   color: revert !important;
   opacity: 0.7;
-  pointer-events: none;
 }
 main .info .report-list h3.title, main .info .report-list .title.h3 {
   font-size: 1.2rem;
