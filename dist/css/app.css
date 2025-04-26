@@ -12411,18 +12411,15 @@ main .info .report-list li,
 main .info .show-list li {
   padding: 0.4rem 0.4rem 0.4rem 1.2rem;
 }
-main .info .location-list a:not([href]):not([class]),
-main .info .location-list a:not([href]):not([class]):hover,
-main .info .name-list a:not([href]):not([class]),
-main .info .name-list a:not([href]):not([class]):hover,
-main .info .page-list a:not([href]):not([class]),
-main .info .page-list a:not([href]):not([class]):hover,
-main .info .report-list a:not([href]):not([class]),
-main .info .report-list a:not([href]):not([class]):hover,
-main .info .show-list a:not([href]):not([class]),
-main .info .show-list a:not([href]):not([class]):hover {
+main .info .location-list a.disabled-link,
+main .info .name-list a.disabled-link,
+main .info .page-list a.disabled-link,
+main .info .report-list a.disabled-link,
+main .info .show-list a.disabled-link {
   border-bottom: none;
-  opacity: 0.875;
+  color: revert !important;
+  opacity: 0.7;
+  pointer-events: none;
 }
 main .info .report-list h3.title, main .info .report-list .title.h3 {
   font-size: 1.2rem;

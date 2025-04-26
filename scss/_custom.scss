@@ -214,10 +214,11 @@ main {
         padding: 0.4rem 0.4rem 0.4rem 1.2rem;
       }
 
-      a:not([href]):not([class]),
-      a:not([href]):not([class]):hover {
+      a.disabled-link {
         border-bottom: none;
-        opacity: 0.875;
+        color: revert !important;
+        opacity: 0.7;
+        pointer-events: none;
       }
     }
 
