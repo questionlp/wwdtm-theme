@@ -12231,6 +12231,9 @@ textarea.form-control-lg {
   --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
 }
 
+body #skip-nav {
+  color: #000000;
+}
 body .tooltip {
   font-size: 0.9em;
 }
@@ -12820,6 +12823,9 @@ footer .copyright {
   background-color: #002d9c;
 }
 
+[data-bs-theme=dark] body #skip-nav {
+  color: #ffffff;
+}
 [data-bs-theme=dark] main a {
   color: #78a9ff;
 }

@@ -13,6 +13,10 @@
 }
 
 body {
+  #skip-nav {
+    color: $black;
+  }
+
   .tooltip {
     font-size: 0.9em;
   }
@@ -726,6 +730,12 @@ footer {
 }
 
 [data-bs-theme=dark] {
+  body {
+    #skip-nav {
+      color: $white;
+    }
+  }
+
   main {
     a {
       color: ibm.$blue-40;
