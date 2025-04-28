@@ -8,7 +8,9 @@ This repository hosts the Sass CSS files that customize Bootstrap for use by the
 
 The contents of this repository is intended to be used as a submodule for other projects. The projects that use this as a submodule would have the appropriate Node.js packages installed, including [Bootstrap](https://getbootstrap.com/), [Bootstrap Icons](https://icons.getbootstrap.com/), and [Sass](https://sass-lang.com/).
 
-Copies of the [IBM Plex](https://github.com/IBM/plex/) fonts release package on GitHub should be stored the `fonts` directory located in the static assets directory for the application as `IBM-Plex-Mono/fonts` and `IBM-Plex-Sans/fonts`.
+Previous versions of this project included copies of the [IBM Plex](https://github.com/IBM/plex/) fonts release package on GitHub should be stored the `fonts` directory located in the static assets directory for the application as `IBM-Plex-Mono/fonts` and `IBM-Plex-Sans/fonts`.
+
+The current version would require the [@ibm/plex-sans](https://www.npmjs.com/package/@ibm/plex-sans) and [@ibm/plex-mono](https://www.npmjs.com/package/@ibm/plex-mono) fonts to be installed via NPM.
 
 ## Sponsoring
 
@@ -16,7 +18,9 @@ If you would like to help sponsor the continued development and maintenance of t
 
 ## License and Acknowledgements
 
-This project is licensed under the under the terms of the [Apache License 2.0](./LICENSE), otherwise noted below.
+The current version of this project has been re-licensed to use the terms of the [MIT License](./LICENSE), unless otherwise noted.
+
+Prior versions of this project had been licensed under the under the terms of the [Apache License 2.0](./LICENSE-APACHE), otherwise noted below.
 
 Additional files that are derived from Bootstrap's `_variables.scss` and `_variables-dark.scss` located under `themes` as `_default.scss` and `_dark.scss` respectively, are licensed under the terms of the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE).
 
