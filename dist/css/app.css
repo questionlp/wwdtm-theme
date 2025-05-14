@@ -12242,6 +12242,7 @@ body .tooltip {
   font-size: 0.9em;
 }
 body .bi-box-arrow-up-right::before {
+  color: var(--bs-body-color) !important;
   font-size: 85% !important;
   vertical-align: initial !important;
 }
@@ -12532,6 +12533,9 @@ main .details .badge.npr-link a {
 }
 main .details .badge.npr-link a i {
   padding-left: 0.6rem;
+}
+main .details .badge.npr-link a .bi-box-arrow-up-right::before {
+  color: inherit !important;
 }
 main .details .badge.repeat {
   background-color: rgb(255, 242.6, 205.4);
