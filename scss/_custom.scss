@@ -26,6 +26,10 @@ body {
     font-size: 85% !important;
     vertical-align: initial !important;
   }
+
+  .bi-envelope::before {
+    color: var(--bs-body-color) !important;
+  }
 }
 
 header {
