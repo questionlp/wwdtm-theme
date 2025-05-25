@@ -168,6 +168,12 @@ main {
   }
 
   .accordion {
+    .accordion-button {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: revert;
+    }
+
     .accordion-button:not(.collapsed) {
       color: inherit;
       background-color: ibm.$gray-10;
