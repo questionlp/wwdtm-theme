@@ -167,6 +167,27 @@ main {
     }
   }
 
+  .accordion {
+    .accordion-button:not(.collapsed) {
+      color: inherit;
+      background-color: ibm.$gray-10;
+    }
+
+    .accordion-button:disabled {
+      font-weight: 400;
+    }
+
+    .accordion-button:disabled::after {
+      background-image: none;
+      background-repeat: unset;
+      background-size: unset;
+    }
+
+    .accordion-header {
+      margin: unset;
+    }
+  }
+
   .container-fluid.p-4 {
     padding: 2rem !important;
   }
@@ -762,6 +783,11 @@ footer {
           color: $white;
         }
       }
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: ibm.$gray-80;
+      box-shadow: unset;
     }
 
     .info {
