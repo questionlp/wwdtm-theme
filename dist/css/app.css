@@ -12356,6 +12356,11 @@ main nav#nav-breadcrumb .breadcrumb {
 main nav#nav-breadcrumb .breadcrumb .active {
   color: #000000;
 }
+main .accordion .accordion-button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: revert;
+}
 main .accordion .accordion-button:not(.collapsed) {
   color: inherit;
   background-color: #f4f4f4;
