@@ -12788,8 +12788,8 @@ main .static-page #toc, main .static-section #toc {
   padding: 1rem 1.6rem 1rem 1rem;
   width: max-content;
 }
-main .static-page #toc ul li, main .static-section #toc ul li {
-  margin: 0.2rem 0;
+main .static-page #toc ol li, main .static-page #toc ul li, main .static-section #toc ol li, main .static-section #toc ul li {
+  line-height: 2rem;
 }
 main .static-page img, main .static-section img {
   margin: 1.4rem auto;
