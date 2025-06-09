@@ -733,12 +733,12 @@ main {
     #toc {
       font-size: 1.125rem;
       margin-left: 1rem;
-      padding: 1rem 1.6rem 1rem 1rem;
+      padding: 1rem 2rem 1rem 1rem;
       width: max-content;
 
       ol, ul {
         li {
-          line-height: 2rem;
+          line-height: 2;
         }
       }
     }
