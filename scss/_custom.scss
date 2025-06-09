@@ -730,6 +730,18 @@ main {
       margin-bottom: 1.6rem;
     }
 
+    #toc {
+      font-size: 1.125rem;
+      margin-left: 1rem;
+      padding: 1rem 1.5rem 1rem;
+
+      ul {
+        li {
+          margin: 0.2rem 0;
+        }
+      }
+    }
+
     img {
       margin: 1.4rem auto;
     }
