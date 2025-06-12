@@ -725,7 +725,8 @@ main {
     }
   }
 
-  .static-page, .static-section {
+  .static-page,
+  .static-section {
     h2 {
       margin-bottom: 1.6rem;
     }
@@ -740,11 +741,18 @@ main {
         margin: 1.4rem 0 1rem;
       }
 
-      ol, ul {
+      ol,
+      ul {
         li {
           line-height: 2;
         }
       }
+    }
+
+    .section-anchor::before {
+      content: "";
+      display: block;
+      height: 3.6rem;
     }
 
     img {
