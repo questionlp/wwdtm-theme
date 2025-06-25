@@ -557,6 +557,12 @@ main {
       vertical-align: middle;
     }
 
+    tbody {
+      .filled {
+        background-color: ibm.$gray-10;
+      }
+    }
+
     col.state {
       width: 6rem;
     }
@@ -850,6 +856,12 @@ footer {
         th {
           background-color: ibm.$gray-80;
           color: $white;
+        }
+      }
+
+      tbody {
+        .filled {
+          background-color: ibm.$gray-80;
         }
       }
 

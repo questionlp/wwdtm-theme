@@ -12646,6 +12646,9 @@ main .report.table th {
   text-align: center;
   vertical-align: middle;
 }
+main .report.table tbody .filled {
+  background-color: #f4f4f4;
+}
 main .report.table col.state {
   width: 6rem;
 }
@@ -12873,6 +12876,9 @@ footer .copyright {
 [data-bs-theme=dark] main .report.table tfoot th {
   background-color: #393939;
   color: #ffffff;
+}
+[data-bs-theme=dark] main .report.table tbody .filled {
+  background-color: #393939;
 }
 [data-bs-theme=dark] main .report.table .header-info {
   border-bottom: 1px dotted #a7f0ba;
