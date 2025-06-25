@@ -18,9 +18,11 @@
     },
     "scripts": {
         "compile-scss": "sass --no-source-map scss/main.scss:dist/css/app.css && sass --no-source-map --style=compressed scss/main.scss:dist/css/app.min.css",
+        "compile-scss-shadows": "sass --no-source-map scss/main-shadows.scss:dist/css/app-shadows.css && sass --no-source-map --style=compressed scss/main-shadows.scss:dist/css/app-shadows.min.css",
         "compile-error-scss": "sass --no-source-map scss/errors.scss:dist/css/errors.css && sass --no-source-map --style=compressed scss/errors.scss:dist/css/errors.min.css",
-        "compile-all": "npm run compile-scss && npm run compile-error-scss",
-        "watch": "sass --watch scss/main.scss:dist/css/app.css",
+        "compile-all": "npm run compile-scss && npm run compile-scss-shadows && npm run compile-error-scss",
+        "watch": "sass --watch scss/main.scss:dist/css/app.css scss/main-shadows.scss:dist/css/app-shadows.css",
+        "watch-shadows": "sass --watch scss/main-shadows.scss:dist/css/app-shadows.css",
         "copy-js-bundle": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map dist/js/",
         "copy-bs-icons": "cp -r node_modules/bootstrap-icons/bootstrap-icons.svg node_modules/bootstrap-icons/font/* dist/bootstrap-icons/",
         "deploy": "npm run compile-all && npm run copy-js-bundle && npm run copy-bs-icons"

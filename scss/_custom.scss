@@ -552,6 +552,12 @@ main {
       }
     }
 
+    tbody {
+      .blocked {
+        background-color: ibm.$gray-10;
+      }
+    }
+
     th {
       text-align: center;
       vertical-align: middle;
@@ -850,6 +856,12 @@ footer {
         th {
           background-color: ibm.$gray-80;
           color: $white;
+        }
+      }
+
+      tbody {
+        .blocked {
+          background-color: ibm.$gray-80;
         }
       }
 
