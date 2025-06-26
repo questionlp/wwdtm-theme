@@ -12667,7 +12667,7 @@ main .report.table col.stats.float {
 main .report.table col.rank {
   width: 9rem;
 }
-main .report.table col.city {
+main .report.table col.city, main .report.table col.date.medium {
   width: 12rem;
 }
 main .report.table col.count.long,
