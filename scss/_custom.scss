@@ -774,6 +774,10 @@ footer {
     text-decoration: none;
   }
 
+  .footer.links {
+      line-height: 2.25;
+  }
+
   .links {
     background-color: $bg-footer-links;
 
@@ -913,6 +917,14 @@ footer {
   }
 }
 
+@media only screen and (max-width: 950px) {
+  footer {
+    .footer.links {
+      line-height: 2.5;
+    }
+  }
+}
+
 @media only screen and (max-width: 801px) {
   main {
     padding-top: 3rem;
@@ -950,8 +962,7 @@ footer {
 
   footer {
     .footer.links {
-      line-height: 2.6;
-      padding: 1rem 0.25rem !important;
+      line-height: 2.625;
     }
   }
 }
