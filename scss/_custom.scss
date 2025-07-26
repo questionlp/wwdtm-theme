@@ -448,6 +448,12 @@ main {
       padding: 0 0 0.4rem;
     }
 
+    .host-info .host-name,
+    .scorekeeper-info,
+    .scorekeeper-name {
+      line-height: 1.625;
+    }
+
     .scorekeeper-description {
       display: block;
       font-style: italic;
@@ -456,7 +462,7 @@ main {
     .stats,
     .panelist-info ul,
     .guest-info ul {
-      line-height: 1.75;
+      line-height: 2;
     }
 
     .graph-list {
@@ -585,7 +591,8 @@ main {
       width: 9rem;
     }
 
-    col.city, col.date.medium {
+    col.city,
+    col.date.medium {
       width: 12rem;
     }
 
@@ -775,7 +782,7 @@ footer {
   }
 
   .footer.links {
-      line-height: 2.25;
+    line-height: 2.25;
   }
 
   .links {
