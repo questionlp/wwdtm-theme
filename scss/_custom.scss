@@ -476,14 +476,6 @@ main {
       font-weight: 500;
       margin-left: 0.4rem;
       text-wrap: nowrap;
-
-      .score-label {
-        padding-right: 0.2rem;
-      }
-
-      .score-label::after {
-        content: ":"
-      }
     }
 
     .bluff-segment-num {
