@@ -1058,6 +1058,12 @@ footer {
       }
     }
   }
+
+  footer {
+    .copyright-text {
+      line-height: 2;
+    }
+  }
 }
 
 @media only screen and (max-width: 569px) {
