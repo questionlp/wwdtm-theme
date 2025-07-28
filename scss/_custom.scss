@@ -592,7 +592,8 @@ main {
     }
 
     col.city,
-    col.date.medium {
+    col.date.medium,
+    col.state.medium {
       width: 12rem;
     }
 
@@ -613,7 +614,8 @@ main {
       width: 16rem;
     }
 
-    col.name.guest.long {
+    col.name.guest.long,
+    col.state.long {
       width: 20rem;
     }
 
