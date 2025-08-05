@@ -1,11 +1,10 @@
 // IBM Plex Sans Web Fonts
 @use '../node_modules/@ibm/plex-sans/scss' as PlexSans with ($font-prefix: '..');
+@use '../node_modules/@ibm/plex-serif/scss' as PlexSerif with ($font-prefix: '..');
 @use '../node_modules/@ibm/plex-mono/scss' as PlexMono with ($font-prefix: '..');
 @include PlexSans.all();
+@include PlexSerif.all();
 @include PlexMono.all();
-
-// Libertinus Serif Web Fonts
-@import "./fonts-libertinus-serif";
 
 // Bootstrap
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
