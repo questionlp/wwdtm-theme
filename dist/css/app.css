@@ -12859,7 +12859,7 @@ footer .copyright {
   --bs-body-color-rgb: 0, 0, 0;
 }
 [data-bs-theme=retro] body #skip-nav {
-  color: #ffffff;
+  color: #000000;
 }
 [data-bs-theme=retro] main a {
   color: #001d6c;
