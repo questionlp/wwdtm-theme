@@ -13508,20 +13508,20 @@ footer .copyright {
   background-color: #002d9c;
 }
 
-[data-bs-theme=retro] ::root {
+[data-bs-theme=retro], ::root {
   --bs-body-bg: #c0c0c0;
   --bs-body-bg-rgb: 192, 192, 192;
   --bs-body-color: #000;
   --bs-body-color-rgb: 0, 0, 0;
   --bs-body-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
 }
-[data-bs-theme=retro] body #skip-nav {
+[data-bs-theme=retro] body #skip-nav, ::root body #skip-nav {
   color: #000000;
 }
-[data-bs-theme=retro] main a {
+[data-bs-theme=retro] main a, ::root main a {
   color: #001d6c;
 }
-[data-bs-theme=retro] .btn, [data-bs-theme=retro] .tooltip {
+[data-bs-theme=retro] .btn, [data-bs-theme=retro] .tooltip, ::root .btn, ::root .tooltip {
   font-family: var(--bs-body-font-family);
 }
 
