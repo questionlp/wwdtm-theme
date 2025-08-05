@@ -817,6 +817,7 @@ footer {
   --bs-body-color: #000;
   --bs-body-color-rgb: 0, 0, 0;
   --bs-body-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
+  --bs-font-sans-serif: var(--bs-body-font-family);
 
   body {
     #skip-nav {
