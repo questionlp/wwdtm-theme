@@ -13525,7 +13525,7 @@ footer .copyright {
 }
 [data-bs-theme=retro] .btn,
 [data-bs-theme=retro] .tooltip {
-  font-family: var(--bs-body-font-family);
+  font-family: var(--bs-btn-font-family) !important;
 }
 
 [data-bs-theme=dark] body #skip-nav {
