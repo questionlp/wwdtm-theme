@@ -13515,6 +13515,7 @@ footer .copyright {
   --bs-body-color-rgb: 0, 0, 0;
   --bs-body-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
   --bs-font-sans-serif: var(--bs-body-font-family);
+  --bs-btn-font-family: var(--bs-body-font-family);
 }
 [data-bs-theme=retro] body #skip-nav {
   color: #000000;
