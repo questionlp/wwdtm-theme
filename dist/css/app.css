@@ -12852,6 +12852,11 @@ footer .copyright {
   background-color: #002d9c;
 }
 
+[data-bs-theme=retro] {
+  --bs-body-color: #c0c0c0;
+  --bs-body-color-rgb: 192, 192, 192;
+}
+
 [data-bs-theme=dark] body #skip-nav {
   color: #ffffff;
 }
