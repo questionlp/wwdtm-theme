@@ -816,6 +816,18 @@ footer {
   --bs-body-bg-rgb: 192, 192, 192;
   --bs-body-color: #000;
   --bs-body-color-rgb: 0, 0, 0;
+
+  body {
+    #skip-nav {
+        color: $white;
+      }
+  }
+
+  main {
+    a {
+      color: ibm.$blue-40;
+    }
+  }
 }
 
 [data-bs-theme=dark] {
