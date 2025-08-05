@@ -12853,8 +12853,10 @@ footer .copyright {
 }
 
 [data-bs-theme=retro] {
-  --bs-body-color: #c0c0c0;
-  --bs-body-color-rgb: 192, 192, 192;
+  --bs-body-bg: #c0c0c0;
+  --bs-body-bg-rgb: 192, 192, 192;
+  --bs-body-color: #000;
+  --bs-body-color-rgb: 0, 0, 0;
 }
 
 [data-bs-theme=dark] body #skip-nav {
