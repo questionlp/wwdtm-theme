@@ -13643,6 +13643,10 @@ footer .copyright {
 [data-bs-theme=retro] main .report.table .header-info {
   border-bottom: 1px dotted #006633;
 }
+[data-bs-theme=retro] .table-hover tbody tr:hover {
+  --bs-table-color-state: unset;
+  --bs-table-bs-state: unset;
+}
 [data-bs-theme=retro] .card.report-form input.btn-submit {
   background-color: #0000ff;
 }

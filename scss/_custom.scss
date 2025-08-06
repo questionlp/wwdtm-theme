@@ -1013,6 +1013,14 @@ footer {
     }
   }
 
+  .table-hover {
+    tbody {
+      tr:hover {
+        --bs-table-color-state: unset;
+        --bs-table-bs-state: unset;
+      }
+    }
+  }
   .card.report-form {
     input.btn-submit {
       background-color: $btn-submit-color-retro;
