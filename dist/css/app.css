@@ -12845,6 +12845,7 @@ textarea.form-control-lg {
 }
 :root {
   --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
+  --bs-font-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
 }
 
 body #skip-nav {
@@ -13511,21 +13512,117 @@ footer .copyright {
 [data-bs-theme=retro] {
   --bs-body-bg: #c0c0c0;
   --bs-body-bg-rgb: 192, 192, 192;
-  --bs-body-color: #000;
+  --bs-body-color: #000000;
   --bs-body-color-rgb: 0, 0, 0;
-  --bs-body-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
-  --bs-btn-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
-  --bs-font-sans-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
+  --bs-border-color: #666666;
+  --bs-border-color-rgb: 51, 51, 51;
+  --bs-body-font-family: IBM Plex Serif, Cambria, Liberation Serif, Times, Times New Roman, serif;
+  --bs-font-sans-serif: IBM Plex Serif, Cambria, Liberation Serif, Times, Times New Roman, serif;
+}
+[data-bs-theme=retro] body {
+  background-color: #c0c0c0;
+  color: #000000;
 }
 [data-bs-theme=retro] body #skip-nav {
   color: #000000;
 }
-[data-bs-theme=retro] main a {
-  color: #001d6c;
+[data-bs-theme=retro] body .btn,
+[data-bs-theme=retro] body .tooltip {
+  font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif !important;
 }
-[data-bs-theme=retro] .btn,
-[data-bs-theme=retro] .tooltip {
-  font-family: var(--bs-btn-font-family) !important;
+[data-bs-theme=retro] header nav {
+  background-color: #000099;
+}
+[data-bs-theme=retro] header .navbar .dropdown-item:hover {
+  background-color: #ffffff;
+}
+[data-bs-theme=retro] header .navbar .dropdown-item.active {
+  background-color: #0033ff;
+}
+[data-bs-theme=retro] header .navbar .offcanvas {
+  background-color: #003399;
+}
+[data-bs-theme=retro] header .navbar .nav-item hr {
+  border: 1px solid #999999;
+  color: #999999;
+}
+[data-bs-theme=retro] header .navbar .nav-link:hover {
+  background-color: #0033ff;
+}
+[data-bs-theme=retro] main a {
+  color: #0000ff !important;
+}
+[data-bs-theme=retro] main a:visited {
+  color: #800080 !important;
+}
+[data-bs-theme=retro] main #nav-breadcrumb,
+[data-bs-theme=retro] main .breadcrumb {
+  background-color: #ffffff;
+}
+[data-bs-theme=retro] main .details {
+  border-left: 3px solid #666666;
+}
+[data-bs-theme=retro] main .details .field-label {
+  border-bottom: 1px solid #666666;
+}
+[data-bs-theme=retro] main .details .badge.best-of {
+  background-color: #99ccff;
+}
+[data-bs-theme=retro] main .details .badge.emeritus {
+  background-color: #ccccff;
+}
+[data-bs-theme=retro] main .details .badge.db-id {
+  background-color: #ffffff;
+}
+[data-bs-theme=retro] main .details .badge.guest {
+  background-color: #66ffcc;
+}
+[data-bs-theme=retro] main .details .badge.npr-link {
+  background-color: #0000ff;
+}
+[data-bs-theme=retro] main .details .badge.npr-link a {
+  color: #ffffff !important;
+}
+[data-bs-theme=retro] main .details .badge.npr-link a:visited {
+  color: #ffffff !important;
+}
+[data-bs-theme=retro] main .details .badge.pronouns {
+  background-color: #99ffff;
+}
+[data-bs-theme=retro] main .details .badge.repeat {
+  background-color: #ffffcc;
+}
+[data-bs-theme=retro] main .details .badge.repeat a {
+  color: #0000ff;
+}
+[data-bs-theme=retro] main .details .badge.repeat a:visited {
+  color: #800080 !important;
+}
+[data-bs-theme=retro] main .info .dms-coordinates,
+[data-bs-theme=retro] main .info .score-exception,
+[data-bs-theme=retro] main .info .help-notes {
+  border-bottom: 1px dotted #006633;
+}
+[data-bs-theme=retro] main .info .leaflet-control-zoom a,
+[data-bs-theme=retro] main .info .leaflet-control-zoom a:link,
+[data-bs-theme=retro] main .info .leaflet-control-zoom a:hover,
+[data-bs-theme=retro] main .info .leaflet-control-zoom a:active,
+[data-bs-theme=retro] main .info .leaflet-control-zoom a:visited,
+[data-bs-theme=retro] main .info #map a,
+[data-bs-theme=retro] main .info #map a:link,
+[data-bs-theme=retro] main .info #map a:hover,
+[data-bs-theme=retro] main .info #map a:active {
+  color: #333333 !important;
+}
+[data-bs-theme=retro] main .info .leaflet-control-zoom a:visited,
+[data-bs-theme=retro] main .info #map a:visited {
+  color: #800080 !important;
+}
+[data-bs-theme=retro] footer .links {
+  background-color: #003399 !important;
+}
+[data-bs-theme=retro] footer .copyright {
+  background-color: #000099;
 }
 
 [data-bs-theme=dark] body #skip-nav {

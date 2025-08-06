@@ -10,6 +10,7 @@
 :root {
   // Adapted from: https://matthewjamestaylor.com/responsive-font-size
   --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
+  --bs-font-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
 }
 
 body {
@@ -119,8 +120,6 @@ header {
         font-size: var(--bs-body-font-size);
       }
     }
-
-
   }
 }
 
@@ -813,31 +812,164 @@ footer {
 
 [data-bs-theme=retro] {
 
-  --bs-body-bg: #c0c0c0;
-  --bs-body-bg-rgb: 192, 192, 192;
-  --bs-body-color: #000;
-  --bs-body-color-rgb: 0, 0, 0;
-  --bs-body-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
-  --bs-btn-font-family: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
-  --bs-font-sans-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif;
+  --bs-body-bg: #{$body-bg-retro};
+  --bs-body-bg-rgb: #{$body-bg-retro-rgb};
+  --bs-body-color: #{$body-color-retro};
+  --bs-body-color-rgb: #{$body-color-retro-rgb};
+  --bs-border-color: #{$border-color-retro};
+  --bs-border-color-rgb: #{$border-color-retro-rgb};
+  --bs-body-font-family: #{$font-family-serif};
+  --bs-font-sans-serif: #{$font-family-serif};
 
 
   body {
+    background-color: $body-bg-retro;
+    color: $body-color-retro;
+
     #skip-nav {
       color: $black;
+    }
+
+    .btn,
+    .tooltip {
+      font-family: $font-family-serif !important;
+    }
+  }
+
+  header {
+    nav {
+      background-color: $navbar-bg-color-retro;
+    }
+
+    .navbar {
+      .dropdown-item:hover {
+        background-color: $navbar-dropdown-item-hover-retro;
+      }
+
+      .dropdown-item.active {
+        background-color: $navbar-dropdown-item-active-retro;
+      }
+
+      .offcanvas {
+        background-color: $offcanvas-bg-color-retro;
+      }
+
+      .nav-item {
+        hr {
+          border: 1px solid $offcanvas-hr-color-retro;
+          color: $offcanvas-hr-color-retro;
+        }
+      }
+
+      .nav-link:hover {
+        background-color: $navbar-bg-navlink-hover-color-retro;
+      }
     }
   }
 
   main {
     a {
-      color: ibm.$blue-90;
+      color: $site-link-color-retro !important;
+    }
+
+    a:visited {
+      color: $site-link-visited-retro !important;
+    }
+
+    #nav-breadcrumb,
+    .breadcrumb {
+      background-color: $nav-breadcrumb-bg-color-retro;
+    }
+
+    .details {
+      border-left: $details-border-width solid rgba($details-border-color-retro, $details-border-opacity-retro);
+
+      .field-label {
+        border-bottom: 1px solid $info-field-border-color-retro;
+      }
+
+      .badge.best-of {
+        background-color: $badge-bg-best-of-retro;
+      }
+
+      .badge.emeritus {
+        background-color: $badge-bg-emeritus-retro;
+      }
+
+      .badge.db-id {
+        background-color: $badge-bg-db-retro;
+      }
+
+      .badge.guest {
+        background-color: $badge-bg-guest-retro;
+      }
+
+      .badge.npr-link {
+        background-color: $badge-bg-npr-retro;
+
+        a {
+          color: $badge-npr-link-retro !important;
+        }
+
+        a:visited {
+          color: $badge-npr-link-visited-retro !important;
+        }
+      }
+
+      .badge.pronouns {
+        background-color: $badge-bg-pronouns-retro;
+      }
+
+      .badge.repeat {
+        background-color: $badge-bg-repeat-retro;
+
+        a {
+          color: $badge-repeat-link-retro;
+        }
+
+        a:visited {
+          color: $site-link-visited-retro !important;
+        }
+      }
+    }
+
+    .info {
+
+      .dms-coordinates,
+      .score-exception,
+      .help-notes {
+        border-bottom: 1px dotted $tooltip-underline-retro;
+      }
+
+      .leaflet-control-zoom a,
+      .leaflet-control-zoom a:link,
+      .leaflet-control-zoom a:hover,
+      .leaflet-control-zoom a:active,
+      .leaflet-control-zoom a:visited,
+      #map a,
+      #map a:link,
+      #map a:hover,
+      #map a:active {
+        color: $leaflet-link-color-retro !important;
+      }
+
+      .leaflet-control-zoom a:visited,
+      #map a:visited {
+        color: $site-link-visited-retro !important;
+      }
     }
   }
 
-  .btn,
-  .tooltip {
-    font-family: var(--bs-btn-font-family) !important;
+  footer {
+    .links {
+      background-color: $bg-footer-links-retro !important;
+    }
+
+    .copyright {
+      background-color: $bg-footer-copyright-retro;
+    }
   }
+
 }
 
 [data-bs-theme=dark] {
