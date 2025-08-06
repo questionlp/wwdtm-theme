@@ -820,6 +820,8 @@ footer {
   --bs-border-color-rgb: #{$border-color-retro-rgb};
   --bs-body-font-family: #{$font-family-serif};
   --bs-font-sans-serif: #{$font-family-serif};
+  --bs-focus-ring-opacity: 1;
+  --bs-focus-ring-color: #{$focus-ring-color-retro};
 
 
   body {
@@ -842,6 +844,11 @@ footer {
     }
 
     .navbar {
+      .btn-close:focus {
+        box-shadow: 0 0 0 0.2rem $black;
+        opacity: unset;
+        outline: 0;
+      }
       .dropdown-item:hover {
         background-color: $navbar-dropdown-item-hover-retro;
       }
@@ -863,6 +870,11 @@ footer {
 
       .nav-link:hover {
         background-color: $navbar-bg-navlink-hover-color-retro;
+      }
+
+      .nav-link:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem $white;
       }
     }
   }
@@ -886,7 +898,6 @@ footer {
         border-left: 4px solid $details-border-hover-color;
       }
     }
-
 
     .details {
       border-left: $details-border-width solid rgba($details-border-color-retro, $details-border-opacity-retro);
@@ -981,6 +992,19 @@ footer {
       }
     }
 
+    .accordion {
+      .accordion-button:focus {
+        border: unset;
+        outline: unset;
+        box-shadow: 0 0 0 0.25rem $focus-ring-color-retro;
+
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: #cccccc;
+      }
+    }
+
     .report.table {
 
       thead,
@@ -1015,15 +1039,24 @@ footer {
 
   .table-hover {
     tbody {
-      tr:hover {
-        --bs-table-color-state: unset;
-        --bs-table-bs-state: unset;
+      tr:hover>* {
+        --bs-table-color-state: 0;
+        --bs-table-bg-state: 0;
       }
     }
   }
+
   .card.report-form {
+
     input.btn-submit {
       background-color: $btn-submit-color-retro;
+    }
+
+    .form-control:focus,
+    input[type="checkbox"]:focus,
+    .form-select:focus {
+      outline: unset;
+      box-shadow: 0 0 0 0.25rem $focus-ring-color-retro;
     }
   }
 

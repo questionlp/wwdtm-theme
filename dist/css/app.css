@@ -13518,6 +13518,8 @@ footer .copyright {
   --bs-border-color-rgb: 51, 51, 51;
   --bs-body-font-family: IBM Plex Serif, Cambria, Liberation Serif, Times, Times New Roman, serif;
   --bs-font-sans-serif: IBM Plex Serif, Cambria, Liberation Serif, Times, Times New Roman, serif;
+  --bs-focus-ring-opacity: 1;
+  --bs-focus-ring-color: #0099ff;
 }
 [data-bs-theme=retro] body {
   background-color: #c0c0c0;
@@ -13532,6 +13534,11 @@ footer .copyright {
 }
 [data-bs-theme=retro] header nav {
   background-color: #000099;
+}
+[data-bs-theme=retro] header .navbar .btn-close:focus {
+  box-shadow: 0 0 0 0.2rem #000000;
+  opacity: unset;
+  outline: 0;
 }
 [data-bs-theme=retro] header .navbar .dropdown-item:hover {
   background-color: #ffffff;
@@ -13548,6 +13555,10 @@ footer .copyright {
 }
 [data-bs-theme=retro] header .navbar .nav-link:hover {
   background-color: #0033ff;
+}
+[data-bs-theme=retro] header .navbar .nav-link:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #ffffff;
 }
 [data-bs-theme=retro] main a {
   color: #0000ff !important;
@@ -13624,6 +13635,14 @@ footer .copyright {
 [data-bs-theme=retro] main .recordings .recording-list {
   column-rule: 1px dotted #666666;
 }
+[data-bs-theme=retro] main .accordion .accordion-button:focus {
+  border: unset;
+  outline: unset;
+  box-shadow: 0 0 0 0.25rem #0099ff;
+}
+[data-bs-theme=retro] main .accordion .accordion-button:not(.collapsed) {
+  background-color: #cccccc;
+}
 [data-bs-theme=retro] main .report.table thead th,
 [data-bs-theme=retro] main .report.table tfoot th {
   background-color: #cccccc;
@@ -13643,12 +13662,18 @@ footer .copyright {
 [data-bs-theme=retro] main .report.table .header-info {
   border-bottom: 1px dotted #006633;
 }
-[data-bs-theme=retro] .table-hover tbody tr:hover {
-  --bs-table-color-state: unset;
-  --bs-table-bs-state: unset;
+[data-bs-theme=retro] .table-hover tbody tr:hover > * {
+  --bs-table-color-state: 0;
+  --bs-table-bg-state: 0;
 }
 [data-bs-theme=retro] .card.report-form input.btn-submit {
   background-color: #0000ff;
+}
+[data-bs-theme=retro] .card.report-form .form-control:focus,
+[data-bs-theme=retro] .card.report-form input[type=checkbox]:focus,
+[data-bs-theme=retro] .card.report-form .form-select:focus {
+  outline: unset;
+  box-shadow: 0 0 0 0.25rem #0099ff;
 }
 [data-bs-theme=retro] footer .links {
   background-color: #003399 !important;
