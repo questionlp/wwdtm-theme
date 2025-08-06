@@ -13618,6 +13618,34 @@ footer .copyright {
 [data-bs-theme=retro] main .info #map a:visited {
   color: #800080 !important;
 }
+[data-bs-theme=retro] main .appearances .appearance-list,
+[data-bs-theme=retro] main .appearances .recording-list,
+[data-bs-theme=retro] main .recordings .appearance-list,
+[data-bs-theme=retro] main .recordings .recording-list {
+  column-rule: 1px dotted #666666;
+}
+[data-bs-theme=retro] main .report.table thead th,
+[data-bs-theme=retro] main .report.table tfoot th {
+  background-color: #cccccc;
+}
+[data-bs-theme=retro] main .report.table tbody .filled {
+  background-color: #cccccc;
+}
+[data-bs-theme=retro] main .report.table td.score-higher {
+  background-color: #66ffcc;
+  color: #000000;
+  font-weight: 600;
+}
+[data-bs-theme=retro] main .report.table td.score-tied {
+  background-color: #99ccff;
+  color: #000000;
+}
+[data-bs-theme=retro] main .report.table .header-info {
+  border-bottom: 1px dotted #006633;
+}
+[data-bs-theme=retro] .card.report-form input.btn-submit {
+  background-color: #0000ff;
+}
 [data-bs-theme=retro] footer .links {
   background-color: #003399 !important;
 }

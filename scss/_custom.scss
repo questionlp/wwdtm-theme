@@ -881,6 +881,13 @@ footer {
       background-color: $nav-breadcrumb-bg-color-retro;
     }
 
+    @if $details-border-hover {
+      .details:hover {
+        border-left: 4px solid $details-border-hover-color;
+      }
+    }
+
+
     .details {
       border-left: $details-border-width solid rgba($details-border-color-retro, $details-border-opacity-retro);
 
@@ -933,6 +940,12 @@ footer {
       }
     }
 
+    @if $details-border-hover {
+      .details:hover {
+        border-left: 4px solid inherit;
+      }
+    }
+
     .info {
 
       .dms-coordinates,
@@ -958,6 +971,52 @@ footer {
         color: $site-link-visited-retro !important;
       }
     }
+
+    .appearances,
+    .recordings {
+
+      .appearance-list,
+      .recording-list {
+        column-rule: 1px dotted $info-field-border-color-retro;
+      }
+    }
+
+    .report.table {
+
+      thead,
+      tfoot {
+        th {
+          background-color: $table-headfoot-bg-retro;
+        }
+      }
+
+      tbody {
+        .filled {
+          background-color: $table-filled-bg-retro;
+        }
+      }
+
+      td.score-higher {
+        background-color: $table-score-higher-bg-retro;
+        color: $black;
+        font-weight: 600;
+      }
+
+      td.score-tied {
+        background-color: $table-score-tied-bg-retro;
+        color: $black;
+      }
+
+      .header-info {
+        border-bottom: 1px dotted $tooltip-underline-retro;
+      }
+    }
+  }
+
+  .card.report-form {
+    input.btn-submit {
+      background-color: $btn-submit-color-retro;
+    }
   }
 
   footer {
@@ -969,7 +1028,6 @@ footer {
       background-color: $bg-footer-copyright-retro;
     }
   }
-
 }
 
 [data-bs-theme=dark] {

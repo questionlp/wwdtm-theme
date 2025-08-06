@@ -86,6 +86,7 @@ $offcanvas-hr-color-retro: #999999;
 $btn-close-color: $white !important;
 $btn-close-opacity: 1;
 // $btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/></svg>") !default;
+$btn-submit-color-retro: #0000ff;
 
 $site-link-color: ibm.$blue-80;
 $site-link-color-dark: ibm.$blue-50;
@@ -143,6 +144,12 @@ $bg-footer-links: ibm.$blue-70;
 $bg-footer-links-retro: #003399;
 $bg-footer-copyright: ibm.$blue-80;
 $bg-footer-copyright-retro: #000099;
+
+$table-headfoot-bg-retro: #cccccc;
+$table-filled-bg-retro: #cccccc;
+
+$table-score-higher-bg-retro: #66ffcc;
+$table-score-tied-bg-retro: #99ccff;
 
 $tooltip-bg: ibm.$blue-70;
 $tooltip-color: ibm.$white;
