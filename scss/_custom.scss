@@ -998,6 +998,10 @@ footer {
     }
 
     .accordion {
+      .accordion-button:disabled {
+        color: $accordion-button-disabled-retro !important;
+      }
+
       .accordion-button:focus {
         border: unset;
         outline: unset;
