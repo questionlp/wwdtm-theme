@@ -884,6 +884,9 @@ footer {
       color: $site-link-color-retro !important;
     }
 
+    a:active {
+      color: $site-link-active-retro !important;
+    }
     a:visited {
       color: $site-link-visited-retro !important;
     }
