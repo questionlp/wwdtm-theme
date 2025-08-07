@@ -849,6 +849,7 @@ footer {
         opacity: unset;
         outline: 0;
       }
+
       .dropdown-item:hover {
         background-color: $navbar-dropdown-item-hover-retro;
       }
@@ -887,6 +888,7 @@ footer {
     a:active {
       color: $site-link-active-retro !important;
     }
+
     a:visited {
       color: $site-link-visited-retro !important;
     }
@@ -1061,6 +1063,11 @@ footer {
       outline: unset;
       box-shadow: 0 0 0 0.25rem $focus-ring-color-retro;
     }
+  }
+
+  .ww-tooltip {
+    --bs-tooltip-bg: #{$tooltip-bg-retro};
+    --bs-tooltip-color: #{$tooltip-color};
   }
 
   footer {
