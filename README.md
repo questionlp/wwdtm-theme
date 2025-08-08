@@ -14,7 +14,7 @@ The current version would require the [@ibm/plex-sans](https://www.npmjs.com/pac
 
 ## Sponsoring
 
-If you would like to help sponsor the continued development and maintenance of the Wait Wait Stats project, please consider sponsoring me on [GitHub](https://github.com/sponsors/questionlp) or on [Patreon](https://patreon.com/Linh_Pham).
+If you would like to help sponsor the continued development and maintenance of the Wait Wait Stats project, please consider sponsoring me on [GitHub](https://github.com/sponsors/questionlp).
 
 ## License and Acknowledgements
 
