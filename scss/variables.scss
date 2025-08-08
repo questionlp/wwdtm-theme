@@ -16,6 +16,7 @@ $enable-reduced-motion: true;
 $enable-transitions: false;
 
 $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Inter", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif !default;
 $font-family-monospace: "IBM Plex Mono", "SFMono-Regular", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", "Courier New", monospace !default;
 $input-btn-font-family: $font-family-sans-serif !default;
 
@@ -27,6 +28,8 @@ $warning: ibm.$alert-40 !default;
 $danger: ibm.$alert-60 !default;
 $light: ibm.$gray-10 !default;
 $dark: ibm.$gray-90 !default;
+
+$retro-gray: #c0c0c0 !default;
 
 $theme-colors: (
     "primary": $primary,
@@ -50,6 +53,12 @@ $body-bg: ibm.$white !default;
 $body-color-dark: ibm.$gray-10 !default;
 $body-bg-dark: ibm.$gray-100 !default;
 
+// Using Basic HTML and Web Safe Colors for Retro theme
+$body-color-retro: #000000;
+$body-color-retro-rgb: 0, 0, 0;
+$body-bg-retro: #c0c0c0;
+$body-bg-retro-rgb: 192, 192, 192;
+
 $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 1.8 !default;
 $h2-font-size: $font-size-base * 1.6 !default;
@@ -59,40 +68,68 @@ $h5-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base !default;
 
 $navbar-bg-color: ibm.$blue-80;
+$navbar-bg-color-retro: #000099;
 $navbar-bg-navlink-hover-color: ibm.$blue-70;
+$navbar-bg-navlink-hover-color-retro: #0033ff;
+$navbar-dropdown-item-hover-retro: #ffffff;
+$navbar-dropdown-item-active-retro: #0033ff;
 $navbar-nav-link-padding-x: 0.6rem;
 $navbar-brand-font-size: 1.4rem;
 $navbar-brand-margin-end: 1.5rem;
 
+$nav-breadcrumb-bg-color-retro: #ffffff;
+
 $offcanvas-bg-color: ibm.$blue-80;
+$offcanvas-bg-color-retro: #003399;
 $offcanvas-bg-navlink-hover-color: ibm.$blue-70;
+$offcanvas-hr-color-retro: #999999;
 $btn-close-color: $white !important;
 $btn-close-opacity: 1;
 // $btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/></svg>") !default;
+$btn-submit-color-retro: #0000ff;
 
 $site-link-color: ibm.$blue-80;
 $site-link-color-dark: ibm.$blue-50;
+$site-link-color-retro: #0000ff;
+$site-link-visited-retro: #800080;
+$site-link-active-retro: #ff0000;
+
+$border-color-retro: #666666;
+$border-color-retro-rgb: 51, 51, 51;
 
 $details-border-color: ibm.$gray-50;
+$details-border-color-retro: #666666;
 $details-border-opacity: 0.8;
+$details-border-opacity-retro: 1;
 $details-border-width: 3px;
 $details-border-hover: false;
 $details-border-hover-color: ibm.$blue-50;
 
 $info-field-border-color: ibm.$gray-50;
+$info-field-border-color-retro: #666666;
 
 $badge-padding-x: 1em;
 $badge-padding-y: 0.6em;
 $badge-font-size: 0.925em;
 
 $badge-bg-best-of: ibm.$blue-30;
+$badge-bg-best-of-retro: #99ccff;
 $badge-bg-npr: ibm.$blue-70;
+$badge-bg-npr-retro: #0000ff;
+$badge-npr-link-retro: #ffffff;
+$badge-npr-link-visited-retro: #ffffff;
 $badge-bg-repeat: $yellow-100;
+$badge-bg-repeat-retro: #ffffcc;
+$badge-repeat-link-retro: #0000ff;
 $badge-bg-guest: ibm.$green-20;
+$badge-bg-guest-retro: #66ffcc;
 $badge-bg-emeritus: ibm.$purple-20;
+$badge-bg-emeritus-retro: #ccccff;
 $badge-bg-pronouns: ibm.$teal-20;
+$badge-bg-pronouns-retro: #99ffff;
 $badge-bg-db: ibm.$gray-10;
 $badge-bg-db-dark: ibm.$gray-90;
+$badge-bg-db-retro: #ffffff;
 
 $badge-text-best-of: $black;
 $badge-text-npr: $white;
@@ -104,19 +141,39 @@ $badge-text-db: $black;
 $badge-text-db-dark: $white;
 
 $bg-footer-links: ibm.$blue-70;
+$bg-footer-links-retro: #003399;
 $bg-footer-copyright: ibm.$blue-80;
+$bg-footer-copyright-retro: #000099;
+
+$table-headfoot-bg-retro: #cccccc;
+$table-filled-bg-retro: #cccccc;
+
+$table-score-higher-bg-retro: #66ffcc;
+$table-score-tied-bg-retro: #99ccff;
 
 $tooltip-bg: ibm.$blue-70;
+$tooltip-bg-retro: #0000ff;
 $tooltip-color: ibm.$white;
 $tooltip-opacity: 1;
 $tooltip-underline: ibm.$green-70;
 $tooltip-underline-dark: ibm.$green-20;
+$tooltip-underline-retro: #006633;
+
+$leaflet-link-color-retro: #333333;
+
+$focus-ring-color-retro: #0099ff;
 
 // Alert Colors
 $danger-border-subtle: ibm.$error;
+$danger-border-retro: #ff0000;
 $info-border-subtle: ibm.$info;
+$info-border-retro: #9999ff;
 $success-border-subtle: ibm.$success;
+$success-border-retro: #00cc00;
 $warning-border-subtle: ibm.$warning;
+$warning-border-retro: #ffff00;
+
+$accordion-button-disabled-retro: #666666;
 
 $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default;
 $btn-close-filter-dark: $btn-close-white-filter !default;
