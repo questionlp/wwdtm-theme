@@ -13601,6 +13601,12 @@ footer .copyright {
 [data-bs-theme=retro] main .details .badge.db-id {
   background-color: #ffffff;
 }
+[data-bs-theme=retro] main .details .badge.is-guest,
+[data-bs-theme=retro] main .details .badge.is-host,
+[data-bs-theme=retro] main .details .badge.is-panelist,
+[data-bs-theme=retro] main .details .badge.is-scorekeeper {
+  color: #000000 !important;
+}
 [data-bs-theme=retro] main .details .badge.guest {
   background-color: #66ffcc;
 }
@@ -13732,6 +13738,12 @@ footer .copyright {
 [data-bs-theme=dark] main .details .badge.db-id {
   background-color: #262626;
   color: #ffffff;
+}
+[data-bs-theme=dark] main .details .badge.is-guest,
+[data-bs-theme=dark] main .details .badge.is-host,
+[data-bs-theme=dark] main .details .badge.is-panelist,
+[data-bs-theme=dark] main .details .badge.is-scorekeeper {
+  color: #f4f4f4 !important;
 }
 [data-bs-theme=dark] main .name-list {
   column-rule: 1px dotted rgba(255, 255, 255, 0.6);
