@@ -374,6 +374,20 @@ main {
       color: $badge-text-db;
     }
 
+    .badge.is-guest,
+    .badge.is-host,
+    .badge.is-panelist,
+    .badge.is-scorekeeper {
+      border: 1px dotted;
+      color: $body-color !important;
+
+      a {
+        i {
+          padding-left: 0.6rem;
+        }
+      }
+    }
+
     .badge.npr-link {
       background-color: $badge-bg-npr;
       color: $badge-text-npr;

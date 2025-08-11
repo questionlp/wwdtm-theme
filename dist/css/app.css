@@ -13158,6 +13158,19 @@ main .details .badge.db-id {
   background-color: #f4f4f4;
   color: #000000;
 }
+main .details .badge.is-guest,
+main .details .badge.is-host,
+main .details .badge.is-panelist,
+main .details .badge.is-scorekeeper {
+  border: 1px dotted;
+  color: #161616 !important;
+}
+main .details .badge.is-guest a i,
+main .details .badge.is-host a i,
+main .details .badge.is-panelist a i,
+main .details .badge.is-scorekeeper a i {
+  padding-left: 0.6rem;
+}
 main .details .badge.npr-link {
   background-color: #0043ce;
   color: #ffffff;
