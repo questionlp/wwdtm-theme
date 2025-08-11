@@ -937,6 +937,13 @@ footer {
         background-color: $badge-bg-db-retro;
       }
 
+      .badge.is-guest,
+      .badge.is-host,
+      .badge.is-panelist,
+      .badge.is-scorekeeper {
+        color: $body-color-retro !important;
+      }
+
       .badge.guest {
         background-color: $badge-bg-guest-retro;
       }
@@ -1143,6 +1150,13 @@ footer {
       .badge.db-id {
         background-color: $badge-bg-db-dark;
         color: $badge-text-db-dark;
+      }
+
+      .badge.is-guest,
+      .badge.is-host,
+      .badge.is-panelist,
+      .badge.is-scorekeeper {
+        color: $body-color-dark !important;
       }
     }
 
