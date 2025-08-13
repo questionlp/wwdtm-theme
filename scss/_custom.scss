@@ -825,7 +825,15 @@ footer {
 }
 
 .nav-underline .nav-link.active,
-.nav-underline .show>.nav-link { font-weight: 600; }
+.nav-underline .show>.nav-link {
+  font-weight: 600;
+}
+
+thead,
+tfoot,
+th {
+  font-weight: 600;
+}
 
 [data-bs-theme=retro] {
 

@@ -13521,19 +13521,15 @@ footer .copyright {
   background-color: #002d9c;
 }
 
-dt {
-  font-weight: 600;
-}
-
-.alert-link,
 .nav-underline .nav-link.active,
 .nav-underline .show > .nav-link {
   font-weight: 600;
 }
 
-.badge {
-  --bs-badge-font-weight: 600;
-  font-weight: var(--bs-badge-font-weight);
+thead,
+tfoot,
+th {
+  font-weight: 600;
 }
 
 [data-bs-theme=retro] {
