@@ -16,13 +16,13 @@ $enable-reduced-motion: true;
 $enable-transitions: false;
 
 // $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Inter", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-sans-serif: "IBM Plex Sans", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif !default;
+$font-family-sans-serif: "IBM Plex Sans", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !default;
 
 // $font-family-serif: "IBM Plex Serif", "Cambria", "Liberation Serif", "Times", "Times New Roman", serif !default;
-$font-family-serif: "IBM Plex Serif", "Georgia", Times, serif !default;
+$font-family-serif: "IBM Plex Serif", "Georgia", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !default;
 
 // $font-family-monospace: "IBM Plex Mono", "SFMono-Regular", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", "Courier New", monospace !default;
-$font-family-monospace: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace !default;
+$font-family-monospace: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace !default;
 
 $input-btn-font-family: $font-family-sans-serif !default;
 
@@ -48,8 +48,8 @@ $theme-colors: (
     "dark": $dark) !default;
 
 $min-contrast-ratio: 4.5 !default;
-$color-contrast-dark: $black !default;
-$color-contrast-light: $white !default;
+$color-contrast-dark: ibm.$black !default;
+$color-contrast-light: ibm.$white !default;
 
 // Using IBM Carbon Design Gray 10 for Light theme
 $body-color: ibm.$gray-100 !default;
@@ -60,7 +60,7 @@ $body-color-dark: ibm.$gray-10 !default;
 $body-bg-dark: ibm.$gray-100 !default;
 
 // Using Basic HTML and Web Safe Colors for Retro theme
-$body-color-retro: #000000;
+$body-color-retro: ibm.$black;
 $body-color-retro-rgb: 0, 0, 0;
 $body-bg-retro: #c0c0c0;
 $body-bg-retro-rgb: 192, 192, 192;
@@ -83,7 +83,7 @@ $navbar-nav-link-padding-x: 0.6rem;
 $navbar-brand-font-size: 1.4rem;
 $navbar-brand-margin-end: 1.5rem;
 
-$nav-breadcrumb-bg-color-retro: #ffffff;
+$nav-breadcrumb-bg-color-retro: ibm.$white;
 
 $offcanvas-bg-color: ibm.$blue-80;
 $offcanvas-bg-color-retro: #003399;
@@ -123,7 +123,7 @@ $badge-bg-best-of-retro: #99ccff;
 $badge-bg-npr: ibm.$blue-70;
 $badge-bg-npr-retro: #0000ff;
 $badge-npr-link-retro: #ffffff;
-$badge-npr-link-visited-retro: #ffffff;
+$badge-npr-link-visited-retro: ibm.$white;
 $badge-bg-repeat: $yellow-100;
 $badge-bg-repeat-retro: #ffffcc;
 $badge-repeat-link-retro: #0000ff;
@@ -135,7 +135,10 @@ $badge-bg-pronouns: ibm.$teal-20;
 $badge-bg-pronouns-retro: #99ffff;
 $badge-bg-db: ibm.$gray-10;
 $badge-bg-db-dark: ibm.$gray-90;
-$badge-bg-db-retro: #ffffff;
+$badge-bg-db-retro: ibm.$white;
+$badge-bg-rank: ibm.$gray-10;
+$badge-bg-rank-dark: ibm.$gray-90;
+$badge-bg-rank-retro: ibm.$white;
 
 $badge-text-best-of: $black;
 $badge-text-npr: $white;

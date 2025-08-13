@@ -10,12 +10,12 @@
 :root {
   // Adapted from: https://matthewjamestaylor.com/responsive-font-size
   --bs-body-font-size: clamp(14.5px, calc(14px + 0.325vw), 16.75px);
-  --bs-font-serif: "IBM Plex Serif", "Georgia", Times, serif;
+  --bs-font-serif: "IBM Plex Serif", "Georgia", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 body {
   #skip-nav {
-    color: $black;
+    color: ibm.$black;
   }
 
   .tooltip {
@@ -34,14 +34,14 @@ body {
 }
 
 header {
-  color: $white;
+  color: ibm.$white;
 
   .navbar {
     background-color: $navbar-bg-color;
-    color: $white;
+    color: ibm.$white;
 
     .navbar-brand {
-      color: $white;
+      color: ibm.$white;
       font-size: 1.5rem;
       font-weight: 600;
       margin-left: 0.4rem;
@@ -50,7 +50,7 @@ header {
 
     .navbar-brand,
     .nav-link {
-      color: $white;
+      color: ibm.$white;
     }
 
     .nav-item {
@@ -68,14 +68,14 @@ header {
 
     .nav-link:hover {
       background-color: $navbar-bg-navlink-hover-color;
-      color: $white;
+      color: ibm.$white;
     }
 
     .offcanvas {
       background-color: $offcanvas-bg-color;
 
       .offcanvas-title {
-        color: $white;
+        color: ibm.$white;
         font-size: 1.5rem;
         padding-top: 0.425rem;
       }
@@ -85,17 +85,17 @@ header {
       }
 
       .dropdown-toggle {
-        color: $white;
+        color: ibm.$white;
       }
     }
 
     .navbar-toggler {
       border: none;
-      color: $white;
+      color: ibm.$white;
     }
 
     .navbar-toggler:focus {
-      border: 1px dotted $white;
+      border: 1px dotted ibm.$white;
     }
 
     .dropdown-item.active,
@@ -161,7 +161,7 @@ main {
       margin-bottom: 0;
 
       .active {
-        color: $black;
+        color: ibm.$black;
       }
     }
   }
@@ -280,7 +280,6 @@ main {
     .dms-coordinates,
     .score-exception,
     .help-notes {
-      border-bottom: 1px dotted $tooltip-underline;
       cursor: help;
     }
 
@@ -289,12 +288,8 @@ main {
     }
 
     .map-link {
-      padding-left: 0.4rem;
+      // padding-left: 0.4rem;
       text-wrap: nowrap;
-
-      i {
-        padding-right: 0.2rem;
-      }
     }
 
     #map {
@@ -352,7 +347,7 @@ main {
     }
 
     a:hover {
-      color: $black;
+      color: ibm.$black;
     }
 
     .row {
@@ -435,6 +430,11 @@ main {
     .badge.pronouns {
       background-color: $badge-bg-pronouns;
       color: $badge-text-pronouns;
+    }
+
+    .badge.rank {
+      background-color: $badge-bg-rank;
+      color: $body-color;
     }
 
     .bluff-info .sub-row {
@@ -685,13 +685,13 @@ main {
 
     td.score-higher {
       background-color: ibm.$green-20;
-      color: $black;
+      color: ibm.$black;
       font-weight: 600;
     }
 
     td.score-tied {
       background-color: ibm.$blue-10;
-      color: $black;
+      color: ibm.$black;
     }
 
     td.score-lower {
@@ -749,7 +749,7 @@ main {
 
     input.btn-submit {
       background-color: ibm.$blue-70;
-      color: $white;
+      color: ibm.$white;
     }
   }
 
@@ -788,11 +788,11 @@ main {
 }
 
 footer {
-  color: $white;
+  color: ibm.$white;
 
   a {
     border-bottom: 1px dotted;
-    color: $white;
+    color: ibm.$white;
     text-decoration: none;
   }
 
@@ -843,7 +843,7 @@ footer {
     color: $body-color-retro;
 
     #skip-nav {
-      color: $black;
+      color: ibm.$black;
     }
 
     .btn,
@@ -859,7 +859,7 @@ footer {
 
     .navbar {
       .btn-close:focus {
-        box-shadow: 0 0 0 0.2rem $black;
+        box-shadow: 0 0 0 0.2rem ibm.$black;
         opacity: unset;
         outline: 0;
       }
@@ -889,7 +889,7 @@ footer {
 
       .nav-link:focus-visible {
         outline: 0;
-        box-shadow: 0 0 0 0.2rem $white;
+        box-shadow: 0 0 0 0.2rem ibm.$white;
       }
     }
   }
@@ -964,6 +964,11 @@ footer {
         background-color: $badge-bg-pronouns-retro;
       }
 
+      .badge.rank {
+        background-color: $badge-bg-rank-retro;
+        color: $body-color-retro;
+      }
+
       .badge.repeat {
         background-color: $badge-bg-repeat-retro;
 
@@ -984,12 +989,6 @@ footer {
     }
 
     .info {
-
-      .dms-coordinates,
-      .score-exception,
-      .help-notes {
-        border-bottom: 1px dotted $tooltip-underline-retro;
-      }
 
       .leaflet-control-zoom a,
       .leaflet-control-zoom a:link,
@@ -1052,13 +1051,13 @@ footer {
 
       td.score-higher {
         background-color: $table-score-higher-bg-retro;
-        color: $black;
+        color: ibm.$black;
         font-weight: 600;
       }
 
       td.score-tied {
         background-color: $table-score-tied-bg-retro;
-        color: $black;
+        color: ibm.$black;
       }
 
       .header-info {
@@ -1109,7 +1108,7 @@ footer {
 [data-bs-theme=dark] {
   body {
     #skip-nav {
-      color: $white;
+      color: ibm.$white;
     }
   }
 
@@ -1123,7 +1122,7 @@ footer {
 
       .breadcrumb {
         .active {
-          color: $white;
+          color: ibm.$white;
         }
       }
     }
@@ -1133,18 +1132,9 @@ footer {
       box-shadow: unset;
     }
 
-    .info {
-
-      .dms-coordinates,
-      .score-exception,
-      .help-notes {
-        border-bottom: 1px dotted $tooltip-underline-dark;
-      }
-    }
-
     .details {
       a:hover {
-        color: $white;
+        color: ibm.$white;
       }
 
       .badge.db-id {
@@ -1158,6 +1148,11 @@ footer {
       .badge.is-scorekeeper {
         color: $body-color-dark !important;
       }
+
+      .badge.rank {
+        background-color: $badge-bg-rank-dark;
+        color: $body-color-dark;
+      }
     }
 
     .name-list {
@@ -1170,7 +1165,7 @@ footer {
       tfoot {
         th {
           background-color: ibm.$gray-80;
-          color: $white;
+          color: ibm.$white;
         }
       }
 
