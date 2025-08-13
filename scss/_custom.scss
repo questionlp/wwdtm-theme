@@ -824,17 +824,6 @@ footer {
   }
 }
 
-.nav-underline .nav-link.active,
-.nav-underline .show>.nav-link {
-  font-weight: 600;
-}
-
-thead,
-tfoot,
-th {
-  font-weight: 600;
-}
-
 [data-bs-theme=retro] {
 
   --bs-body-bg: #{$body-bg-retro};
