@@ -824,6 +824,12 @@ footer {
   }
 }
 
+thead,
+tfoot,
+th {
+  font-weight: $font-weight-bold;
+}
+
 [data-bs-theme=retro] {
 
   --bs-body-bg: #{$body-bg-retro};
