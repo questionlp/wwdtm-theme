@@ -13254,16 +13254,19 @@ main .details .graph-list {
 }
 main .details .score {
   font-weight: 600;
-  margin-left: 0.4rem;
+  margin-left: 0.6rem;
 }
 main .details .score-details {
   margin-left: 1.4rem;
   text-wrap: nowrap;
 }
 main .details .score-details .score-start {
-  border-right: 1px solid;
+  border-right: 1px dotted;
   margin-right: 0.4rem;
   padding-right: 0.4rem;
+}
+main .details .score-details .score-correct {
+  margin-left: 0.2rem;
 }
 main .details .score-details .score-label {
   font-weight: 500;
