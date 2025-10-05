@@ -54,13 +54,13 @@ $min-contrast-ratio: 4.5 !default;
 $color-contrast-dark: ibm.$black !default;
 $color-contrast-light: ibm.$white !default;
 
-// Using IBM Carbon Design Gray 10 for Light theme
+// Using IBM Carbon Design Gray 100 and White for Light theme
 $body-color: ibm.$gray-100 !default;
 $body-bg: ibm.$white !default;
 
-// Using IBM Carbon Design Gray 100 for Dark theme
+// Using IBM Carbon Design Gray 10 and Gray 90 for Dark theme
 $body-color-dark: ibm.$gray-10 !default;
-$body-bg-dark: ibm.$gray-100 !default;
+$body-bg-dark: ibm.$gray-90 !default;
 
 // Using Basic HTML and Web Safe Colors for Retro theme
 $body-color-retro: ibm.$black;

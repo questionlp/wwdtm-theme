@@ -488,7 +488,22 @@ main {
     .score {
       font-weight: 600;
       margin-left: 0.4rem;
+    }
+
+    .score-details {
+      margin-left: 1.4rem;
       text-wrap: nowrap;
+
+      .score-start {
+        border-right: 1px solid;
+        margin-right: 0.4rem;
+        padding-right: 0.4rem;
+      }
+
+      .score-label {
+        font-weight: 500;
+        margin-right: 0.2rem;
+      }
     }
 
     .bluff-segment-num {
