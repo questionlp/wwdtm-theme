@@ -495,8 +495,10 @@ main {
       text-wrap: nowrap;
 
       .score-start {
+        border-left: 1px dotted;
         border-right: 1px dotted;
         margin-right: 0.4rem;
+        padding-left: 0.6rem;
         padding-right: 0.4rem;
       }
 
