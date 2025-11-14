@@ -603,6 +603,14 @@ main {
       }
     }
 
+    colgroup.cg-border-end {
+      border-right: 2px solid;
+    }
+
+    colgroup.cg-border-start {
+      border-left: 2px solid;
+    }
+
     col.state {
       width: 6rem;
     }
