@@ -555,6 +555,10 @@ main {
         .appearance-list.panelist {
           column-count: 2;
         }
+
+        li {
+          break-inside: avoid-column;
+        }
       }
 
       .appearance-list.list-col-2,
