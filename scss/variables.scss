@@ -62,6 +62,12 @@ $body-bg: ibm.$white !default;
 $body-color-dark: ibm.$gray-10 !default;
 $body-bg-dark: ibm.$gray-90 !default;
 
+// Using IBM Carbon Design Gray 30 and Black for Dark Contrast theme
+$body-color-dark-contrast: ibm.$gray-30;
+$body-color-dark-contrast-rgb: #c6c6c6;
+$body-bg-dark-contrast: ibm.$black;
+$body-bg-dark-contrast-rgb: 0, 0, 0;
+
 // Using Basic HTML and Web Safe Colors for Retro theme
 $body-color-retro: ibm.$black;
 $body-color-retro-rgb: 0, 0, 0;
@@ -109,8 +115,12 @@ $site-link-active-retro: #ff0000;
 $border-color-retro: #666666;
 $border-color-retro-rgb: 51, 51, 51;
 
+$border-color-dark-contrast: ibm.$gray-40;
+$border-color-dark-contrast-rgb: 168, 168, 168;
+
 $details-border-color: ibm.$gray-50;
 $details-border-color-retro: #666666;
+$details-border-color-dark-contrast: ibm.$gray-40;
 $details-border-opacity: 0.8;
 $details-border-opacity-retro: 1;
 $details-border-width: 3px;
@@ -119,6 +129,7 @@ $details-border-hover-color: ibm.$blue-50;
 
 $info-field-border-color: ibm.$gray-50;
 $info-field-border-color-retro: #666666;
+$info-field-border-color-dark-contrast: ibm.$gray-40;
 
 $badge-padding-x: 1em;
 $badge-padding-y: 0.6em;
