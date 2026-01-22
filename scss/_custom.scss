@@ -1164,6 +1164,17 @@ th {
     }
   }
 
+  header {
+    nav {
+      #theme-dropdown {
+        border: 1px solid ibm.$gray-90;
+      }
+
+      .dropdown-item:hover {
+          background-color: $navbar-dropdown-item-hover-dark-contrast;
+        }
+    }
+  }
   main {
     a {
       color: ibm.$blue-40;

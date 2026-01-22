@@ -13765,6 +13765,12 @@ th {
 [data-bs-theme=dark-contrast] body #skip-nav {
   color: #ffffff;
 }
+[data-bs-theme=dark-contrast] header nav #theme-dropdown {
+  border: 1px solid #262626;
+}
+[data-bs-theme=dark-contrast] header nav .dropdown-item:hover {
+  background-color: #262626;
+}
 [data-bs-theme=dark-contrast] main a {
   color: #78a9ff;
 }
