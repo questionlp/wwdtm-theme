@@ -1179,7 +1179,7 @@ th {
   }
   main {
     a {
-      color: ibm.$blue-40;
+      color: $site-link-color-dark-contrast;
     }
 
     #nav-breadcrumb {
@@ -1203,8 +1203,8 @@ th {
 
       .accordion-button::after{
         color:$body-color-dark-contrast;
-        --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23e0e0e0' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
-        --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23e0e0e0' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
+        --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
       }
 
       .accordion-button:not(.collapsed) {
@@ -1214,10 +1214,10 @@ th {
     }
 
     .card {
-        border-color: ibm.$gray-40 !important;
+        border-color: $border-color-dark-contrast !important;
 
         .form-select {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e0e0e0' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
         }
     }
 
@@ -1250,7 +1250,7 @@ th {
     }
 
     .name-list {
-      column-rule: 1px dotted rgba($white, 0.6);
+      column-rule: 1px dotted rgba(ibm.$white, 0.6);
     }
 
     .report.table {
