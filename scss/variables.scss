@@ -2,7 +2,7 @@
 // wwdtm-theme is released under the terms of the MIT License
 // SPDX-License-Identifier: MIT License
 //
-// vim: set noai syntax=python ts=4 sw=4:
+// vim: set noai syntax=css ts=4 sw=4:
 
 // IBM Design Colors
 @use "./colors-ibm" as ibm;
@@ -62,6 +62,12 @@ $body-bg: ibm.$white !default;
 $body-color-dark: ibm.$gray-10 !default;
 $body-bg-dark: ibm.$gray-90 !default;
 
+// Using IBM Carbon Design Gray 30 and Black for Dark Contrast theme
+$body-color-dark-contrast: ibm.$gray-10;
+$body-color-dark-contrast-rgb: 244, 244, 244;
+$body-bg-dark-contrast: ibm.$black;
+$body-bg-dark-contrast-rgb: 0, 0, 0;
+
 // Using Basic HTML and Web Safe Colors for Retro theme
 $body-color-retro: ibm.$black;
 $body-color-retro-rgb: 0, 0, 0;
@@ -85,6 +91,7 @@ $navbar-bg-navlink-hover-color: ibm.$blue-70;
 $navbar-bg-navlink-hover-color-retro: #0033ff;
 $navbar-dropdown-item-hover-retro: #ffffff;
 $navbar-dropdown-item-active-retro: #0033ff;
+$navbar-dropdown-item-hover-dark-contrast: ibm.$gray-90;
 $navbar-nav-link-padding-x: 0.6rem;
 $navbar-brand-font-size: 1.4rem;
 $navbar-brand-margin-end: 1.5rem;
@@ -102,6 +109,7 @@ $btn-submit-color-retro: #0000ff;
 
 $site-link-color: ibm.$blue-80;
 $site-link-color-dark: ibm.$blue-50;
+$site-link-color-dark-contrast: ibm.$blue-30;
 $site-link-color-retro: #0000ff;
 $site-link-visited-retro: #800080;
 $site-link-active-retro: #ff0000;
@@ -109,8 +117,12 @@ $site-link-active-retro: #ff0000;
 $border-color-retro: #666666;
 $border-color-retro-rgb: 51, 51, 51;
 
+$border-color-dark-contrast: ibm.$gray-30;
+$border-color-dark-contrast-rgb: 198, 198, 198;
+
 $details-border-color: ibm.$gray-50;
 $details-border-color-retro: #666666;
+$details-border-color-dark-contrast: ibm.$gray-30;
 $details-border-opacity: 0.8;
 $details-border-opacity-retro: 1;
 $details-border-width: 3px;
@@ -119,6 +131,7 @@ $details-border-hover-color: ibm.$blue-50;
 
 $info-field-border-color: ibm.$gray-50;
 $info-field-border-color-retro: #666666;
+$info-field-border-color-dark-contrast: ibm.$gray-30;
 
 $badge-padding-x: 1em;
 $badge-padding-y: 0.6em;

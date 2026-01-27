@@ -2,7 +2,7 @@
 // wwdtm-theme is released under the terms of the MIT License
 // SPDX-License-Identifier: MIT License
 //
-// vim: set noai syntax=python ts=4 sw=4:
+// vim: set noai syntax=scss ts=4 sw=4:
 
 // IBM Design Colors
 @use "./colors-ibm" as ibm;
@@ -863,7 +863,7 @@ th {
   font-weight: $font-weight-bold;
 }
 
-[data-bs-theme=retro] {
+[data-bs-theme="retro"] {
 
   --bs-body-bg: #{$body-bg-retro};
   --bs-body-bg-rgb: #{$body-bg-retro-rgb};
@@ -1144,7 +1144,147 @@ th {
   }
 }
 
-[data-bs-theme=dark] {
+[data-bs-theme="dark-contrast"] {
+
+  --bs-body-bg: #{$body-bg-dark-contrast};
+  --bs-body-bg-rgb: #{$body-bg-dark-contrast-rgb};
+  --bs-body-color: #{$body-color-dark-contrast};
+  --bs-body-color-rgb: #{$body-color-dark-contrast-rgb};
+  --bs-border-color: #{$border-color-dark-contrast};
+  --bs-border-color-rgb: #{$border-color-dark-contrast-rgb};
+  --bs-body-font-family: #{$font-family-sans-serif};
+  --bs-font-sans-serif: #{$font-family-sans-serif};
+  --bs-table-color: #{$body-color-dark-contrast};
+  --bs-accordion-btn-color: #{$body-color-dark-contrast};
+
+  body {
+    background-color: $body-bg-dark-contrast;
+    color: $body-color-dark-contrast;
+
+    #skip-nav {
+      color: ibm.$white;
+    }
+  }
+
+  header {
+    nav {
+      #theme-dropdown {
+        border: 1px solid ibm.$gray-90;
+      }
+
+      .dropdown-item:hover {
+          background-color: $navbar-dropdown-item-hover-dark-contrast;
+        }
+    }
+  }
+  main {
+    a {
+      color: $site-link-color-dark-contrast;
+    }
+
+    #nav-breadcrumb {
+      background-color: ibm.$gray-90;
+
+      .breadcrumb {
+        .active {
+          color: ibm.$white;
+        }
+      }
+
+      .breadcrumb-item+.breadcrumb-item::before {
+        color: rgba(ibm.$white, 0.75);
+      }
+    }
+
+    .accordion {
+      .accordion-button {
+        color: $body-color-dark-contrast;
+      }
+
+      .accordion-button::after{
+        color:$body-color-dark-contrast;
+        --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: ibm.$gray-80;
+        box-shadow: unset;
+      }
+    }
+
+    .card {
+        border-color: $border-color-dark-contrast !important;
+
+        .form-select {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+        }
+    }
+
+    .details {
+      border-left: $details-border-width solid rgba($details-border-color-dark-contrast, $details-border-opacity);
+      a:hover {
+        color: ibm.$white;
+      }
+
+      .badge.db-id {
+        background-color: $badge-bg-db-dark;
+        color: $badge-text-db-dark;
+      }
+
+      .badge.is-guest,
+      .badge.is-host,
+      .badge.is-panelist,
+      .badge.is-scorekeeper {
+        color: $body-color-dark !important;
+      }
+
+      .badge.rank {
+        background-color: $badge-bg-rank-dark;
+        color: $body-color-dark;
+      }
+
+      .field-label {
+        border-bottom: 1px solid $info-field-border-color-dark-contrast;
+      }
+    }
+
+    .name-list {
+      column-rule: 1px dotted rgba(ibm.$white, 0.6);
+    }
+
+    .report.table {
+
+      thead,
+      tfoot {
+        th {
+          background-color: ibm.$gray-80;
+          color: ibm.$white;
+        }
+      }
+
+      tbody {
+        .filled {
+          background-color: ibm.$gray-80;
+        }
+      }
+
+      .header-info {
+        border-bottom: 1px dotted $tooltip-underline-dark;
+      }
+
+      td {
+        color: $body-color-dark-contrast !important;
+      }
+
+      td.score-higher, td.score-tied {
+        color: ibm.$black !important;
+      }
+    }
+  }
+}
+
+[data-bs-theme="dark"] {
   body {
     #skip-nav {
       color: ibm.$white;
