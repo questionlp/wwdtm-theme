@@ -10,7 +10,7 @@ The contents of this repository is intended to be used as a submodule for other 
 
 Previous versions of this project included copies of the [IBM Plex](https://github.com/IBM/plex/) fonts release package on GitHub should be stored the `fonts` directory located in the static assets directory for the application as `IBM-Plex-Mono/fonts` and `IBM-Plex-Sans/fonts`.
 
-The current version would require the [@ibm/plex-sans](https://www.npmjs.com/package/@ibm/plex-sans) and [@ibm/plex-mono](https://www.npmjs.com/package/@ibm/plex-mono) fonts to be installed via NPM.
+The current version would require the [@ibm/plex-sans](https://www.npmjs.com/package/@ibm/plex-sans), [@ibm/plex-mono](https://www.npmjs.com/package/@ibm/plex-mono) and [@ibm/plex-serif](https://www.npmjs.com/package/@ibm/plex-serif) fonts to be installed via NPM.
 
 ## Contributing
 
