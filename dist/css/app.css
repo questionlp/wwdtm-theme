@@ -13358,7 +13358,7 @@ main .details .panelist-info ul,
 main .details .guest-info ul {
   line-height: 2;
 }
-main .details .graph-list, main .details .report-list {
+main .details .graph-links, main .details .graph-list .report-links {
   column-count: 2;
   column-fill: balance;
   column-rule: none;
@@ -14077,7 +14077,7 @@ th {
     font-weight: 600;
     padding-bottom: 0.6rem;
   }
-  main .details .graph-list {
+  main .details .graph-links, main .details .graph-list, main .details .report-links {
     column-count: 1;
   }
   main .info .name-list {
