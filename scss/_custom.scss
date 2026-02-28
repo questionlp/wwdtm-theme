@@ -478,7 +478,7 @@ main {
       line-height: 2;
     }
 
-    .graph-list, .report-list {
+    .graph-links, .graph-list .report-links {
       column-count: 2;
       column-fill: balance;
       column-rule: none;
@@ -1472,7 +1472,7 @@ th {
         padding-bottom: 0.6rem;
       }
 
-      .graph-list {
+      .graph-links, .graph-list, .report-links {
         column-count: 1;
       }
     }
