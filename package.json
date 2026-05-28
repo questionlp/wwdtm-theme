@@ -1,29 +1,42 @@
 {
-    "name": "wwdtm-theme",
-    "version": "2.5.6",
-    "description": "Bootstrap UI for Wait Wait Stats Projects",
-    "author": {
-        "name": "Linh Pham",
-        "url": "https://linhpham.org/"
-    },
-    "license": "MIT",
-    "private": true,
-    "dependencies": {
-        "@ibm/plex-mono": "^1.1.0",
-        "@ibm/plex-sans": "^1.1.0",
-        "@ibm/plex-serif": "^2.0.0",
-        "bootstrap": "^5.3.8",
-        "bootstrap-icons": "^1.13.1",
-        "css-minify": "^2.1.0",
-        "sass": "^1.79.6"
-    },
-    "scripts": {
-        "compile-scss": "sass --no-source-map scss/main.scss:dist/css/app.css && sass --no-source-map --style=compressed scss/main.scss:dist/css/app.min.css",
-        "compile-error-scss": "sass --no-source-map scss/errors.scss:dist/css/errors.css && sass --no-source-map --style=compressed scss/errors.scss:dist/css/errors.min.css",
-        "compile-all": "npm run compile-scss && npm run compile-error-scss",
-        "watch": "sass --watch scss/main.scss:dist/css/app.css",
-        "copy-js-bundle": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map dist/js/",
-        "copy-bs-icons": "cp -r node_modules/bootstrap-icons/bootstrap-icons.svg node_modules/bootstrap-icons/font/* dist/bootstrap-icons/",
-        "deploy": "npm run compile-all && npm run copy-js-bundle && npm run copy-bs-icons"
+  "name": "wwdtm-theme",
+  "version": "2.5.6",
+  "description": "Bootstrap UI for Wait Wait Stats Projects",
+  "author": {
+    "name": "Linh Pham",
+    "url": "https://linhpham.org/"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@ibm/plex-mono": "^1.1.0",
+    "@ibm/plex-sans": "^1.1.0",
+    "@ibm/plex-serif": "^2.0.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "css-minify": "^2.1.0",
+    "sass": "^1.79.6"
+  },
+  "scripts": {
+    "compile-scss": "sass --no-source-map scss/main.scss:dist/css/app.css && sass --no-source-map --style=compressed scss/main.scss:dist/css/app.min.css",
+    "compile-error-scss": "sass --no-source-map scss/errors.scss:dist/css/errors.css && sass --no-source-map --style=compressed scss/errors.scss:dist/css/errors.min.css",
+    "compile-all": "npm run compile-scss && npm run compile-error-scss",
+    "watch": "sass --watch scss/main.scss:dist/css/app.css",
+    "copy-js-bundle": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map dist/js/",
+    "copy-bs-icons": "cp -r node_modules/bootstrap-icons/bootstrap-icons.svg node_modules/bootstrap-icons/font/* dist/bootstrap-icons/",
+    "deploy": "npm run compile-all && npm run copy-js-bundle && npm run copy-bs-icons"
+  },
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^5.0.2",
+    "@lavamoat/preinstall-always-fail": "^3.0.0"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "@ibm/plex-mono#1.1.0": false,
+      "@ibm/plex-sans#1.1.0": false,
+      "@ibm/plex-serif#2.0.0": false,
+      "@lavamoat/preinstall-always-fail#3.0.0": false,
+      "sass>@parcel/watcher#2.5.1": false
     }
+  }
 }
