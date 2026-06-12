@@ -1,5 +1,7 @@
 # Wait Wait Stats Project Theme
 
+**Note:** The authoritative version of this repository now resides on Codeberg as [wwdtm-theme](https://codeberg.org/qlp/wwdtm-theme) and mirrors changes to GitHub. Going forward, issues and pull requests should be created on Codeberg rather than GitHub.
+
 ## Overview
 
 This repository hosts the Sass CSS files that customize Bootstrap for use by the Wait Wait Stats project.
