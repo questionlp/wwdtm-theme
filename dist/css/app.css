@@ -13159,6 +13159,7 @@ main .info .data-tbd {
 }
 main .info .location-list,
 main .info .name-list,
+main .info .pack-list,
 main .info .page-list,
 main .info .report-list,
 main .info .show-list {
@@ -13168,6 +13169,7 @@ main .info .show-list {
 }
 main .info .location-list i,
 main .info .name-list i,
+main .info .pack-list i,
 main .info .page-list i,
 main .info .report-list i,
 main .info .show-list i {
@@ -13175,6 +13177,7 @@ main .info .show-list i {
 }
 main .info .location-list li,
 main .info .name-list li,
+main .info .pack-list li,
 main .info .page-list li,
 main .info .report-list li,
 main .info .show-list li {
@@ -13182,6 +13185,7 @@ main .info .show-list li {
 }
 main .info .location-list a.disabled-link,
 main .info .name-list a.disabled-link,
+main .info .pack-list a.disabled-link,
 main .info .page-list a.disabled-link,
 main .info .report-list a.disabled-link,
 main .info .show-list a.disabled-link {
