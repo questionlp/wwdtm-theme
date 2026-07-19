@@ -13858,6 +13858,9 @@ th {
   --bs-tooltip-bg: #0000ff;
   --bs-tooltip-color: #ffffff;
 }
+[data-bs-theme=retro] .nav-tabs .nav-link:hover {
+  color: #0000ff;
+}
 [data-bs-theme=retro] footer .links {
   background-color: #003399 !important;
 }
@@ -13963,6 +13966,9 @@ th {
 }
 [data-bs-theme=dark-contrast] main .report.table td.score-higher, [data-bs-theme=dark-contrast] main .report.table td.score-tied {
   color: #000000 !important;
+}
+[data-bs-theme=dark-contrast] main .nav-tabs .nav-link.active {
+  color: #f4f4f4;
 }
 
 [data-bs-theme=dark] body #skip-nav {

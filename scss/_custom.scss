@@ -1137,6 +1137,12 @@ th {
     --bs-tooltip-color: #{$tooltip-color};
   }
 
+  .nav-tabs {
+    .nav-link:hover {
+      color: $site-link-color-retro;
+    }
+  }
+
   footer {
     .links {
       background-color: $bg-footer-links-retro !important;
@@ -1284,6 +1290,12 @@ th {
 
       td.score-higher, td.score-tied {
         color: ibm.$black !important;
+      }
+    }
+
+    .nav-tabs {
+      .nav-link.active {
+        color: $body-color-dark;
       }
     }
   }
