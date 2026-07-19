@@ -878,6 +878,7 @@ th {
   --bs-font-sans-serif: #{$font-family-serif};
   --bs-focus-ring-opacity: 1;
   --bs-focus-ring-color: #{$focus-ring-color-retro};
+  --bs-link-color: #{$site-link-color-retro};
 
 
   body {
@@ -1136,6 +1137,12 @@ th {
     --bs-tooltip-color: #{$tooltip-color};
   }
 
+  .nav-tabs {
+    .nav-link:hover {
+      color: $site-link-color-retro;
+    }
+  }
+
   footer {
     .links {
       background-color: $bg-footer-links-retro !important;
@@ -1159,6 +1166,7 @@ th {
   --bs-font-sans-serif: #{$font-family-sans-serif};
   --bs-table-color: #{$body-color-dark-contrast};
   --bs-accordion-btn-color: #{$body-color-dark-contrast};
+  --bs-nav-tabs-link-active-color: #{$body-color-dark-contrast};
 
   body {
     background-color: $body-bg-dark-contrast;
@@ -1282,6 +1290,12 @@ th {
 
       td.score-higher, td.score-tied {
         color: ibm.$black !important;
+      }
+    }
+
+    .nav-tabs {
+      .nav-link.active {
+        color: $body-color-dark;
       }
     }
   }
