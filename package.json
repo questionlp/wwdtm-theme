@@ -27,7 +27,7 @@
     "deploy": "npm run compile-all && npm run copy-js-bundle && npm run copy-bs-icons"
   },
   "allowScripts": {
-    "@ibm/plex-mono#1.1.0": false,
+    "@ibm/plex-mono#2.5.0": false,
     "@ibm/plex-sans#1.1.0": false,
     "@ibm/plex-serif#2.0.0": false
   }
