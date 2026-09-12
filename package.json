@@ -15,7 +15,7 @@
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "css-minify": "^2.1.0",
-    "sass": "^1.79.6"
+    "sass": "1.101.3"
   },
   "scripts": {
     "compile-scss": "sass --no-source-map scss/main.scss:dist/css/app.css && sass --no-source-map --style=compressed scss/main.scss:dist/css/app.min.css",
