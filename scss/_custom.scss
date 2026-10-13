@@ -405,6 +405,16 @@ main {
       }
     }
 
+    .badge.social {
+      padding: 0rem 0.3rem;
+
+      a {
+        border-bottom: none;
+        color: $body-color !important;
+        text-decoration: none;
+      }
+    }
+
     .badge.repeat {
       background-color: $badge-bg-repeat;
       color: $badge-text-repeat;
@@ -1246,8 +1256,15 @@ th {
       .badge.is-guest,
       .badge.is-host,
       .badge.is-panelist,
-      .badge.is-scorekeeper {
+      .badge.is-scorekeeper,
+      .badge.social {
         color: $body-color-dark !important;
+      }
+
+      .badge.social {
+        a {
+          color: $body-color-dark !important;
+        }
       }
 
       .badge.rank {
@@ -1341,8 +1358,15 @@ th {
       .badge.is-guest,
       .badge.is-host,
       .badge.is-panelist,
-      .badge.is-scorekeeper {
+      .badge.is-scorekeeper,
+      .badge.social {
         color: $body-color-dark !important;
+      }
+
+      .badge.social {
+        a {
+          color: $body-color-dark !important;
+        }
       }
 
       .badge.rank {
