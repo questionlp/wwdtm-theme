@@ -1,6 +1,6 @@
 {
   "name": "wwdtm-theme",
-  "version": "2.6.7",
+  "version": "2.6.8",
   "description": "Bootstrap UI for Wait Wait Stats Projects",
   "author": {
     "name": "Linh Pham",
@@ -13,7 +13,7 @@
     "@ibm/plex-sans": "^1.1.0",
     "@ibm/plex-serif": "^2.0.0",
     "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1",
+    "bootstrap-icons": "^1.13.2",
     "css-minify": "^1.1.0",
     "sass": "^1.79.6"
   },
