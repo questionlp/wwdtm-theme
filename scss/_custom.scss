@@ -284,7 +284,7 @@ main {
       }
     }
 
-    
+
 
     .dms-coordinates {
       margin-right: 0.4rem;
@@ -405,7 +405,8 @@ main {
       }
     }
 
-    .badge.social {
+    .badge.social,
+    .badge.external-sites {
       a {
         border-bottom: none;
         color: $body-color !important;
@@ -490,7 +491,8 @@ main {
       line-height: 2;
     }
 
-    .graph-links, .graph-list .report-links {
+    .graph-links,
+    .graph-list .report-links {
       column-count: 2;
       column-fill: balance;
       column-rule: none;
@@ -1193,10 +1195,11 @@ th {
       }
 
       .dropdown-item:hover {
-          background-color: $navbar-dropdown-item-hover-dark-contrast;
-        }
+        background-color: $navbar-dropdown-item-hover-dark-contrast;
+      }
     }
   }
+
   main {
     a {
       color: $site-link-color-dark-contrast;
@@ -1221,8 +1224,8 @@ th {
         color: $body-color-dark-contrast;
       }
 
-      .accordion-button::after{
-        color:$body-color-dark-contrast;
+      .accordion-button::after {
+        color: $body-color-dark-contrast;
         --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
         --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
       }
@@ -1234,15 +1237,16 @@ th {
     }
 
     .card {
-        border-color: $border-color-dark-contrast !important;
+      border-color: $border-color-dark-contrast !important;
 
-        .form-select {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-        }
+      .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f4f4f4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+      }
     }
 
     .details {
       border-left: $details-border-width solid rgba($details-border-color-dark-contrast, $details-border-opacity);
+
       a:hover {
         color: ibm.$white;
       }
@@ -1256,11 +1260,13 @@ th {
       .badge.is-host,
       .badge.is-panelist,
       .badge.is-scorekeeper,
-      .badge.social {
+      .badge.social,
+      .badge.external-sites {
         color: $body-color-dark !important;
       }
 
-      .badge.social {
+      .badge.social,
+      .badge.external-sites {
         a {
           color: $body-color-dark !important;
         }
@@ -1304,7 +1310,8 @@ th {
         color: $body-color-dark-contrast !important;
       }
 
-      td.score-higher, td.score-tied {
+      td.score-higher,
+      td.score-tied {
         color: ibm.$black !important;
       }
     }
@@ -1358,11 +1365,13 @@ th {
       .badge.is-host,
       .badge.is-panelist,
       .badge.is-scorekeeper,
-      .badge.social {
+      .badge.social,
+      .badge.external-sites {
         color: $body-color-dark !important;
       }
 
-      .badge.social {
+      .badge.social,
+      .badge.badge.external-sites {
         a {
           color: $body-color-dark !important;
         }
@@ -1512,7 +1521,9 @@ th {
         padding-bottom: 0.6rem;
       }
 
-      .graph-links, .graph-list, .report-links {
+      .graph-links,
+      .graph-list,
+      .report-links {
         column-count: 1;
       }
     }
